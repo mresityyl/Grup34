@@ -4,17 +4,18 @@
 
 ## **Takım Logosu**
 
-<!-- Logo henüz eklenmedi -->
+![Adsız tasarım (1)](https://github.com/user-attachments/assets/88ca5bd3-af83-452d-94a3-6d95907023cb)
+
 
 ## Takım Elemanları
 
 |    | <div align="center">Name</div>   | <div align="center">Title</div>  | <div align="center">Socials</div>     |
 | :-----------: | :------------------------ | :------------------ | :----------------------------------: |
-|  –  | İzzet Kadir Yılmaz     | Product Owner     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/izzetkadireryilmaz/) |
-|  –  | Nazlı Vayvalakyan     | Scrum Master     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/nazlivayvalakyan/) |
-|  –  | Ogün Foan     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/ogunfoan/) |
-|  –  | Alin Kısakürek     | Developer     | – |
-|  –  | Muhammet Reşit Yayla     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/muhammet-resit-yayla/) |
+|   | İzzet Kadir Yılmaz     | Product Owner     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/izzetkadireryilmaz/) |
+|   | Nazlı Vayvalakyan     | Scrum Master     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/nazlivayvalakyan/) |
+|   | Ogün Foan     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/ogunfoan/) |
+|   | Alin Kısakürek     | Developer     | – |
+|   | Muhammet Reşit Yayla     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/muhammet-resit-yayla/) |
 
 ## Oyun İsmi
 
@@ -22,7 +23,8 @@
 
 ## Oyun Logosu
 
-<!-- Logo henüz eklenmedi -->
+![Adsız (400 x 400 piksel) (1)](https://github.com/user-attachments/assets/29ec2f8b-d081-4011-bd5e-47fa5f56d765)
+
 
 ## Oyun Açıklaması
 
