@@ -11,7 +11,7 @@
 
 |    | <div align="center">Name</div>   | <div align="center">Title</div>  | <div align="center">Socials</div>     |
 | :-----------: | :------------------------ | :------------------ | :----------------------------------: |
-|   | İzzet Kadir Yılmaz     | Product Owner     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/izzetkadireryilmaz/) |
+|   | İzzet Kadir Eryılmaz     | Product Owner     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/izzetkadireryilmaz/) |
 |   | Nazlı Vayvalakyan     | Scrum Master     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/nazlivayvalakyan/) |
 |   | Ogün Foan     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/ogunfoan/) |
 |   | Alin Kısakürek     | Developer     | – |
