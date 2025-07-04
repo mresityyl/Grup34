@@ -52,4 +52,30 @@ Yanlış yorumlanan bir ipucu, zamanında bulunamayan bir parça veya bastırıl
 
 - Psikolojik korku severler  
 - Hikâye odaklı oyun tutkunları  
-- Atmosferik keşif oyuncuları  
+- Atmosferik keşif oyuncuları
+
+## Pazarlama Planı
+
+- False Awakening, güçlü anlatısı, atmosferik yapısı ve derin psikolojik temalarıyla bağımsız korku oyunları arasında dikkat çekici bir potansiyele sahiptir. Bu  nedenle oyun, reklam gelirine odaklanmak yerine Steam platformunda yayınlanmak üzere konumlandırılmıştır.
+- Oyun için bir Steam sayfası oluşturulacak, sayfa üzerinden wishlist kampanyaları, erken erişim süreci ve topluluk yönetimi yürütülecektir. .
+- Oyunumuzun severlerine yönelik özel merchandise (tişörtler, kupalar, posterler vb.) ürünleri de piyasaya sürülecektir. Bu, markamızın bilinirliğini artırırken, sadık müşterilerimize farklı kanallardan ulaşmamızı sağlayacaktır. 
+- Başlangıç fiyatı 5–10$ aralığında belirlenecek olup, oyuncu geri bildirimlerine göre dönemsel indirim ve içerik güncellemeleriyle desteklenecektir.
+
+## Product Backlog URL
+
+[Miro Backlog Board](https://miro.com/app/board/uXjVIhhFNKw=/)
+
+---
+
+# Sprint 1
+
+- **Sprint Notları**: Ürün geliştirme sürecinde oluşturulan tüm kullanıcı hikâyeleri, ilgili backlog kartlarının içine detaylı biçimde entegre edilmiştir. Her bir backlog öğesine tıklanarak, o göreve ait kapsam, bağlam ve ihtiyaçlar okunabilir şekilde yer almaktadır.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Projenin tamamı boyunca yapılması planlanan tüm işler toplamda 300 puanlık bir iş yüküne karşılık gelmektedir. Bu toplam iş yükü üç sprinte eşit şekilde bölünerek her bir sprint için yaklaşık 100 puanlık görev belirlenmiştir. Böylece proje süreci hem dengeli hem de yönetilebilir şekilde ilerlemektedir.
+
+- **Backlog düzeni ve Story seçimleri**: Mevcut backlog; oyunun geliştirilmesi süresince yapılacak tüm görevleri kapsamaktadır. Bu görevler, sprint planına uygun şekilde önceliklendirildi ve sprintler arası geçişleri kolaylaştıracak biçimde yapılandırıldı. Miro Board üzerinde kullanılan renk kodları şu şekilde tanımlanmıştır: turuncu item'lar _tasarım_, mavi item'lar _kodlama/geliştirme_, sarı item'lar _görsel efekt_, mor item'lar _ses_ gösterirken, yeşil item'lar ise _türü olmayan_ görevleri temsil etmektedir.
+
+
+
