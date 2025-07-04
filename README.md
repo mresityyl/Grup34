@@ -14,7 +14,7 @@
 |   | İzzet Kadir Eryılmaz     | Product Owner     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/izzetkadireryilmaz/) |
 |   | Nazlı Vayvalakyan     | Scrum Master     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/nazlivayvalakyan/) |
 |   | Ogün Foan     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/ogunfoan/) |
-|   | Alin Kısakürek     | Developer     | – |
+|   | Alin Kısakürek     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)]([https://www.linkedin.com/in/ogunfoan/](https://www.linkedin.com/in/alin-k%C4%B1sak%C3%BCrek-48b61b305/)) | 
 |   | Muhammet Reşit Yayla     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/muhammet-resit-yayla/) |
 
 ## Oyun İsmi
