@@ -9,6 +9,7 @@ public class FlashlightController : MonoBehaviour
     private GameObject lightSource;
     private AudioSource audioSource;
 
+    [SerializeField] private Vector3 offset;
     [SerializeField] private bool IsEnabled = true;
     [SerializeField] private bool IsOn;
     private readonly float slerpSpeed = 10f;
@@ -40,7 +41,7 @@ public class FlashlightController : MonoBehaviour
     private void Update()
     {
         transform.SetPositionAndRotation(
-            cameraTransform.position, 
+            cameraTransform.position + offset, 
             Quaternion.Slerp(transform.rotation, cameraTransform.rotation, slerpSpeed * Time.deltaTime)
         );
     }

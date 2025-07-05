@@ -46,11 +46,11 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 150
   m_Range: 30
-  m_SpotAngle: 61.96154
-  m_InnerSpotAngle: 15.24176
+  m_SpotAngle: 65
+  m_InnerSpotAngle: 35
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -170,6 +170,7 @@ MonoBehaviour:
   flashLightSFX:
   - {fileID: 8300000, guid: d77b7395406925d48912252ed8d176c3, type: 3}
   - {fileID: 8300000, guid: 4406869c3d7478545bcd37da960a200e, type: 3}
+  offset: {x: 0.3, y: -0.3, z: 0.3}
   IsEnabled: 1
   IsOn: 0
 --- !u!82 &1746744816300121605
