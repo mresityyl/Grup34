@@ -355,13 +355,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6917e0f1a6a6f046be4e27f02d95e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  sprintSpeed: 10
+  walkSpeed: 3
+  sprintSpeed: 7
   sensitivity: 0.2
   maxLookAngle: 70
+  walkFOV: 60
+  runFOV: 70
+  fovDuration: 0.5
   cameraHolder: {fileID: 8691492123198460526}
-  headbobSpeed: 10
-  headbobAmount: 0.04
+  headbobSpeed: 8
+  headbobAmount: 0.02
   gravity: -19.62
   crouchRatio: 0.5
   crouchSmoothTime: 0.1

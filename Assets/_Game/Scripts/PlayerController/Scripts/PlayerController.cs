@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        playerMovement.PlayerMove(characterController, playerInput.MoveInput, playerInput.SprintToggledOn);
+        playerMovement.PlayerMove(characterController, playerCamera, playerInput.MoveInput, playerInput.SprintToggledOn);
 
         playerMovement.PlayerCrouch(characterController, playerCamera.transform, playerInput.CrouchToggledOn);
 

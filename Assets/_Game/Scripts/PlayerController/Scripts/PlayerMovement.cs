@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,8 +7,9 @@ public class PlayerMovement : MonoBehaviour
     #region Variables
 
     [Header("Movement")]
-    [SerializeField] private float walkSpeed = 2f;
-    [SerializeField] private float sprintSpeed = 5f;
+    [SerializeField] private float walkSpeed = 3f;
+    [SerializeField] private float sprintSpeed = 7f;
+    [SerializeField] private float crouchSpeed = 1f;
     private Vector3 moveDirection;
     private Vector2 smoothInput;
     private Vector2 smoothVelocity;
@@ -19,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
     private float lookAtHorizontal;
     private float yawVelocity = 0f;
     private float pitchVelocity = 0f;
+    [SerializeField] private float walkFOV = 60f;
+    [SerializeField] private float runFOV = 75f;
+    [SerializeField] private float fovDuration = 0.3f;
+    private Tweener fovTween;
 
     [Header("Headbob")]
     [SerializeField] private Transform cameraHolder;
@@ -65,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
         currentCameraPos = originalCameraLocalPos;
     }
 
-    public void PlayerMove(CharacterController characterController, Vector2 input, bool sprintToggledOn)
+    public void PlayerMove(CharacterController characterController, Camera playerCamera, Vector2 input, bool sprintToggledOn)
     {
         smoothInput = Vector2.SmoothDamp(smoothInput, input, ref smoothVelocity, 0.1f);
 
@@ -73,7 +79,9 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove += transform.forward * smoothInput.y;
         horizontalMove += transform.right * smoothInput.x;
 
-        float speed = sprintToggledOn && !wasCrouching ? sprintSpeed : walkSpeed;
+        bool isSprint = sprintToggledOn && !wasCrouching;
+        bool isCrouch = !sprintToggledOn && wasCrouching;
+        float speed = isSprint ? sprintSpeed : isCrouch ? crouchSpeed : walkSpeed;
         horizontalMove *= speed;
 
         //Gravity
@@ -94,10 +102,10 @@ public class PlayerMovement : MonoBehaviour
         {
             headbobTimer += Time.deltaTime * headbobSpeed;
 
-            float currentBobAmount = sprintToggledOn ? headbobAmount * 1.5f : wasCrouching ? headbobAmount * 0.5f : headbobAmount;
+            float currentBobAmount = sprintToggledOn ? headbobAmount * 2f : wasCrouching ? headbobAmount * 0.5f : headbobAmount;
             float bobX = Mathf.Sin(headbobTimer) * currentBobAmount;
             float bobY = Mathf.Cos(headbobTimer * 2) * currentBobAmount;
-            Debug.Log(currentBobAmount);
+
             Vector3 bobPosition = cameraInitialLocalPos + new Vector3(bobX, bobY, 0);
             cameraHolder.localPosition = bobPosition;
         }
@@ -106,6 +114,18 @@ public class PlayerMovement : MonoBehaviour
             headbobTimer = 0f;
             cameraHolder.localPosition = Vector3.Lerp(cameraHolder.localPosition, cameraInitialLocalPos, Time.deltaTime * headbobSpeed);
         }
+
+        //FOV
+        float targetFOV = sprintToggledOn && isMoving ? runFOV : walkFOV;
+
+        if (Mathf.Abs(playerCamera.fieldOfView - targetFOV) > 0.1f)
+        {
+            if (fovTween != null && fovTween.IsActive())
+                fovTween.Kill();
+
+            fovTween = playerCamera.DOFieldOfView(targetFOV, fovDuration);
+        }
+
     }
 
     public void PlayerSetCamera(Transform camera, Vector2 input)
