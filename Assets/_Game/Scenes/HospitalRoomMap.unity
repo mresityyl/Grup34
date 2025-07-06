@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &38650358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917172672916452816, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7457316690292684778, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
+      propertyPath: m_Name
+      value: FlashLight
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f037fa5b40c37a7418dd425fb60a9998, type: 3}
 --- !u!1001 &49681763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4447,6 +4504,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4003842681440078790, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.266
@@ -4494,31 +4555,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6458774027923765309, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1960770523}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
---- !u!1 &1960770522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6458774027923765309, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
-  m_PrefabInstance: {fileID: 1960770521}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1960770523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960770522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b20ef912289c964b874e6545330ebdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayDistance: 5
-  spawnpoints: []
-  TimerCanvas: {fileID: 0}
 --- !u!1001 &2025842615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4930,6 +4968,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1774850444}
   - {fileID: 1960770521}
+  - {fileID: 38650358}
   - {fileID: 205908056}
   - {fileID: 49681763}
   - {fileID: 2032089580}
