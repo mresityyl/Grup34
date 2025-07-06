@@ -48,6 +48,35 @@ Yanlış yorumlanan bir ipucu, zamanında bulunamayan bir parça veya bastırıl
 - **Perspektif:** 1. şahıs sabit kamera  
 - **Ana Mekanlar:** Elias’ın hastane odası (gerçek dünya), çarpıtılmış hastane yapısı (rüya dünyası)  
 
+## Oyun Mekanikleri
+
+- **Temel Mekanikler**
+
+  - **Geçmişe Ait Anı Toplama:** Oyuncu, Elias’ın zihninde bastırdığı travmalarla yüzleşmesini sağlayacak oyuncaklar, kişisel eşyalar, el yazısı notlar gibi objeleri rüya haritalarında toplar. Bu objeler Elias’ın odasında bulunan anı defterine işlenir. Defter, ilerledikçe görsel olarak da dolarak oyuncuya ilerleme hissi verir (karalamalar, çizimler, Noah’ın bir fotoğrafı, el yazmaları vb.).
+  - **Rüya Döngüsü:** Oyuncu uykudan uyandığında bir rüya haritasına “uyanır”. Haritalar, hastanenin farklı bölümlerinin çarpıtılmış versiyonlarıdır. Oyuncu bu haritada belirli bir süre içinde ipucunu bulmalıdır. Zaman dolarsa ya da takip eden varlık oyuncuyu yakalarsa, Elias uyanır ancak ipucunu bulmadıysa bu harita tekrar oynanmak zorunda kalır.
+
+
+- **Çevre Etkileşimi**
+
+  - **Objelerle Etkileşim:** Etkileşimli objeler parlaklık veya silüet efektiyle vurgulanır. Bazı objeler sadece bilgi sağlar (hikâye anlatımı amaçlı), bazıları ise envantere eklenir (örneğin ipucu nesneleri).
+  - **Işık Kullanımı (Fener):** Görüş mesafesi sınırlıdır. Oyuncu sadece fener ile önünü görebilir. Fenerin yönü ile dikkatli bakmak, objeleri bulmak için önemlidir.
+  - **Fısıltılar ve İşitsel Gerilim:** Oyuncuya yön veren ya da yanıltan fısıltılar (örn. “sağa git”, “arkandayım”) dinamik olarak tetiklenir. Ayak sesleri, nefes alışlar, çığlıklar gibi sesler oyuncunun takip edildiğini hissettirmek için kullanılır.
+
+
+
+- **Başarısızlık ve İlerleme**
+
+  - **Rüyadan Zorunlu Uyanış:** Eğer oyuncu süre bitmeden ipucunu bulamazsa veya takip edilen bir varlık tarafından yakalanırsa uyanmak zorunda kalır. Bu durumda, ilgili rüya haritası tekrar oynanır.
+  - **Anı Defteri İlerlemesi:** Toplanan her ipucu, Elias’ın anı defterinde yeni bir çizim veya bilgi olarak belirir. Defter doldukça Noah’ın kayboluşuna dair büyük resmi ortaya çıkarır. Tüm parçalar toplandığında, oyuncu gerçek hikâyeye ulaşır ve oyunun sonu devreye girer.
+
+
+## Oyun İlerleme Sistemi
+
+- **Bölüm Yapısı:** Oyun, toplamda 3 ana rüya bölgesinden oluşur. Her bölge Elias’ın zihninde çarpıtılmış bir hastane bölümüne karşılık gelir: Çocuk Koğuşu (Noah’ın anıları), Morg (ölümle yüzleşme), Arşiv (unutulan anılar).
+- **Defter ve Sembol Sistemi:** Her rüya bölgesinde bir defter sayfasının parçası saklıdır. Bu parçayı bulan oyuncunun defterinde bir sembol, sayı veya görsel belirir. Bu semboller hem hikâyeyi açar hem de finalde çözülmesi gereken şifre sisteminin parçalarıdır.
+- **Final Aşaması:** Tüm 3 rüya bölgesi tamamlandığında, defterdeki ipuçları birleştirilerek oyuncuya kapalı oda kilidini açacak şifreyi verir. Şifre doğru girilirse Elias odadan çıkar ve oyunun sonuna ulaşılır.
+
+
 ## Hedef Kitle
 
 - Psikolojik korku severler  
@@ -56,10 +85,13 @@ Yanlış yorumlanan bir ipucu, zamanında bulunamayan bir parça veya bastırıl
 
 ## Pazarlama Planı
 
-- False Awakening, güçlü anlatısı, atmosferik yapısı ve derin psikolojik temalarıyla bağımsız korku oyunları arasında dikkat çekici bir potansiyele sahiptir. Bu  nedenle oyun, reklam gelirine odaklanmak yerine Steam platformunda yayınlanmak üzere konumlandırılmıştır.
-- Oyun için bir Steam sayfası oluşturulacak, sayfa üzerinden wishlist kampanyaları, erken erişim süreci ve topluluk yönetimi yürütülecektir. .
-- Oyunumuzun severlerine yönelik özel merchandise (tişörtler, kupalar, posterler vb.) ürünleri de piyasaya sürülecektir. Bu, markamızın bilinirliğini artırırken, sadık müşterilerimize farklı kanallardan ulaşmamızı sağlayacaktır. 
-- Başlangıç fiyatı 5–10$ aralığında belirlenecek olup, oyuncu geri bildirimlerine göre dönemsel indirim ve içerik güncellemeleriyle desteklenecektir.
+False Awakening, güçlü anlatısı, atmosferik yapısı ve derin psikolojik temalarıyla bağımsız korku oyunları arasında dikkat çekici bir potansiyele sahiptir. Bu nedenle oyun, reklam gelirine odaklanmak yerine Steam platformunda yayınlanmak üzere konumlandırılmıştır.
+
+- **Hedef Kitle:** Hedef kitlemiz, psikolojik korku ve hikâye odaklı oyunlara ilgi duyan 18–35 yaş arası oyunculardır. Özellikle Steam üzerinde Layers of Fear, SOMA veya Visage gibi oyunları tercih eden kullanıcı profiliyle örtüşmektedir. Oyun tercihlerinde atmosfer ve anlatı ön planda olan bu kullanıcılar, bizim için ideal hedef grubu oluşturmaktadır.
+
+- **Strateji ve Uygulama:** Oyunun tanıtımı için bir Steam sayfası oluşturulacak, bu sayfa üzerinden wishlist kampanyaları, erken erişim süreci ve topluluk yönetimi yapılacaktır. Tanıtım sürecinde kısa sinematik fragmanlar, fısıltı temalı teaser’lar ve oynanış videoları ile ilgi çekilmesi hedeflenmektedir. Bu plan, sprint sürecinde gerçekleştirilen ekip içi değerlendirme toplantılarında yapılan tartışmalar ve alınan geri bildirimler doğrultusunda şekillendirilmiştir.
+
+- **Gelir Modeli ve Topluluk Etkileşimi:** Başlangıç fiyatı 5–10$ aralığında belirlenecek olup, oyuncu geri bildirimlerine göre dönemsel indirim ve içerik güncellemeleriyle desteklenecektir. Oyun çıktıktan sonra, topluluğa özel olarak tasarlanmış merchandise ürünleri (defter, poster, tişört vb.) sunularak marka bilinirliği artırılacak ve sadık oyuncu kitlesi ile etkileşim sürdürülecektir. Geliştirme süreci sonrası, alternatif sonlar ve yeni bölümlerle oyunun uzun ömürlü olması sağlanacaktır.
 
 ## Product Backlog URL
 
