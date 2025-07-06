@@ -79,7 +79,7 @@ Yanlış yorumlanan bir ipucu, zamanında bulunamayan bir parça veya bastırıl
 
 - **Daily Scrum**: Sprint süresince ekip üyeleri, günlük ilerlemelerini yazılı olarak **WhatsApp** üzerinden paylaşmıştır. Bu günlük bildirimler, sürecin şeffaf şekilde takip edilmesini sağlamış ve ekip içi görünürlüğü artırmıştır. Teknik kararlar, hızlı yönlendirme ve eş zamanlı bilgi aktarımı gereken durumlarda ise **Slack** üzerinden sesli görüşmeler gerçekleştirilmiştir. Bu iletişim dengesi, sprint boyunca hem yazılı kayıt oluşturulmasını hem de anlık koordinasyonun sağlıklı yürütülmesini mümkün kılmıştır. Ayrıca, sprint boyunca **her üç günde** bir planlı ekip toplantısı yapılacak şekilde yapılandırılmıştır. Bu toplantılar, biriken sorunların paylaşılması, ekip uyumunun korunması ve görev geçişlerinin daha net biçimde yönetilmesi açısından oldukça verimli geçmiştir.
 
-Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı günleri ve kaç saat sürdüğü arşivlenmek üzere Imgur üzerinde belgelenmektedir. [Sprint 1 – Daily Scrum Documentation](https://imgur.com/a/Y2zcalS)
+Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı günleri ve kaç saat sürdüğü arşivlenmek üzere Imgur üzerinde belgelenmektedir. [Sprint 1 – Daily Scrum Documentation](https://imgur.com/a/jTTq7LP)
 
 - **Sprint 1 Board**: ![Screenshot_27](https://github.com/user-attachments/assets/394cd225-702a-4684-be35-4cf7afc89bb1)
 ![Screenshot_29](https://github.com/user-attachments/assets/02f17ba3-44d7-4dfe-8073-d583e9de7b49)
@@ -91,6 +91,17 @@ Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı g
 ![Screenshot_37](https://github.com/user-attachments/assets/877abd52-150e-4e11-b75a-5149b6e4137b)
 ![Screenshot_40](https://github.com/user-attachments/assets/95906182-7466-4c3a-b46c-24516810500a)
 ![Screenshot_44](https://github.com/user-attachments/assets/435165c7-4a54-4dd9-a816-84d0f9d5ae6a)
+
+
+
+https://github.com/user-attachments/assets/74d802eb-dcdc-41a8-8e64-ebf114343415
+
+
+
+https://github.com/user-attachments/assets/4abbe2fa-cf3f-4943-9a1e-49305232722a
+
+
+
 
 </details>
 
