@@ -386,5 +386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayDistance: 5
-  spawnpoints: []
+  spawnpoints:
+  - {fileID: 0}
   TimerCanvas: {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 55

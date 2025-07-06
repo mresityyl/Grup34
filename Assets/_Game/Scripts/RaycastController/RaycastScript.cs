@@ -10,6 +10,7 @@ public class RaycastScript : MonoBehaviour
     public Transform[] spawnpoints;
     CharacterController controller;
     public Canvas TimerCanvas;
+    public LayerMask layerMask;
 
     private void Awake()
     {
@@ -28,7 +29,7 @@ public class RaycastScript : MonoBehaviour
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, rayDistance))
+            if (Physics.Raycast(ray, out hit, rayDistance, layerMask))
             {
                 Debug.Log("Çarptýðýn nesne: " + hit.collider.name);
 
