@@ -100,7 +100,7 @@ https://github.com/user-attachments/assets/74d802eb-dcdc-41a8-8e64-ebf114343415
 
 https://github.com/user-attachments/assets/4abbe2fa-cf3f-4943-9a1e-49305232722a
 
-
+(Lütfen ürünün videolarını izleyiniz, sesi açmayı unutmayın.)
 
 
 </details>
