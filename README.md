@@ -86,17 +86,15 @@ Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı g
 
 
 <details> <summary><h3>False Awakening – Oyun İçi Durum Görselleri</h3></summary>
+</details>
 
 - **Sprint Review**: 
   - Sprint 1 boyunca, oyunun temel iskeletini oluşturan ana sistemler başarıyla hayata geçirildi. Planlanan tüm görevler tamamlandı ve geliştirme süreci, oyuncunun deneyimleyeceği ilk sahnelere yönelik somut çıktılarla ilerledi. Ana menü sistemi, rüya başlatma mekanizması, defter etkileşimleri, ışık/fener sistemi ve sahne geçişleri eksiksiz bir şekilde çalışır duruma getirildi.
-
-- Görsel tasarım tarafında Elias’ın kaldığı odanın 3D modeli tamamlandı ve hastane ortamının ilk koridorları şekillendirildi. Bu alanlar, oyunun atmosferini yansıtan ilk çevresel yapı taşlarını oluşturdu. Kodlama tarafında ise temel kullanıcı arayüzü ve oynanışa dair ana sistemler test edilerek uygulamaya geçirildi. Ses ve görsel efekt görevleri için gerekli hazırlıklar yapılmış, sonraki sprintlerde aktif olarak işlenecek alanlar belirlenmiştir.
-
-- Sprint sonunda ortaya çıkan yapı, oyunun ilk oynanabilir ön prototipini oluşturacak seviyeye ulaşmıştır. Görevlerin hem tamamlanma oranı hem de birbirine entegre çalışabilirliği açısından bu sprint başarıyla sonuçlanmıştır.
+  - Görsel tasarım tarafında Elias’ın kaldığı odanın 3D modeli tamamlandı ve hastane ortamının ilk koridorları şekillendirildi. Bu alanlar, oyunun atmosferini yansıtan ilk çevresel yapı taşlarını oluşturdu. Kodlama tarafında ise temel kullanıcı arayüzü ve oynanışa dair ana sistemler test edilerek uygulamaya geçirildi. Ses ve görsel efekt görevleri için gerekli hazırlıklar yapılmış, sonraki sprintlerde aktif olarak işlenecek alanlar belirlenmiştir.
+  - Sprint sonunda ortaya çıkan yapı, oyunun ilk oynanabilir ön prototipini oluşturacak seviyeye ulaşmıştır. Görevlerin hem tamamlanma oranı hem de birbirine entegre çalışabilirliği açısından bu sprint başarıyla sonuçlanmıştır.
 
 - **Sprint Retrospective:** 
-  - Ekip iki gruba bölündü, bir grup oyunun kalan 4 bölümü üzerinde çalışarak ilerlemeye devam edecek; diğer ekip ise oluşturulan bölümlerin eksiklikleri üzerinde çalışacak ve oyunu final aşamasına hazır hale getirecek.
-    - Grup 1: İsmail, İncila
-    - Grup 2: İbrahim, İpek, İrfan
-  - Toplantıların belirli bir zaman aralığıyla gerçekleştirilmesi kararlaştırıldı.
-  - Üretim aşamasında görev alan ekip üyelerine gelecek bölümlerde ihtiyaç duyulabilecek assetlerin üretimi için listeler hazırlandı
+  - Sprint 1 süresince ekip genel olarak planlı, uyumlu ve üretken bir çalışma yürüttü. Görev dağılımları, bireysel uzmanlık alanlarına göre belirlendi; iletişim ve iş takibi düzenli şekilde ilerledi. Geliştirilen yapı sayesinde, tamamlanan tüm görevler zamanında ve entegre biçimde teslim edildi.
+  - Bu sprintte özellikle GitHub üzerinde yaşanan küçük bir entegrasyon çakışması, ekip üyelerinin birbirine hızlıca destek olması sayesinde kısa sürede çözüldü. Bu örnek, teknik işbirliğinin ne kadar etkin çalıştığını gösterdi.
+  - Sprint 1 sonunda, görev tamamlama oranı, ekip içi iletişim verimliliği ve karşılıklı iş birliği beklentilerin üzerindeydi. Ancak süreç içinde ortaya çıkan küçük aksamalar ve içerik eksikleri göz önüne alınarak, sonraki sprintlerde görev kartlarının daha detaylı tanımlanmasına karar verildi.
+
