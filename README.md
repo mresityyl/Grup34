@@ -89,7 +89,7 @@ Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı g
 </details>
 
 - **Sprint Review**: 
-  - Sprint 1 boyunca, oyunun temel iskeletini oluşturan ana sistemler başarıyla hayata geçirildi. Planlanan tüm görevler tamamlandı ve geliştirme süreci, oyuncunun deneyimleyeceği ilk sahnelere yönelik somut çıktılarla ilerledi. Ana menü sistemi, rüya başlatma mekanizması, defter etkileşimleri, ışık/fener sistemi ve sahne geçişleri eksiksiz bir şekilde çalışır duruma getirildi.
+  - Sprint 1 boyunca, oyunun temel iskeletini oluşturan ana sistemler başarıyla hayata geçirildi. Planlanan tüm görevler tamamlandı ve geliştirme süreci, oyuncunun deneyimleyeceği ilk sahnelere yönelik somut çıktılarla ilerledi. Ana menü sistemi, rüya başlatma mekanizması, ışık/fener sistemi ve sahne geçişleri eksiksiz bir şekilde çalışır duruma getirildi.
   - Görsel tasarım tarafında Elias’ın kaldığı odanın 3D modeli tamamlandı ve hastane ortamının ilk koridorları şekillendirildi. Bu alanlar, oyunun atmosferini yansıtan ilk çevresel yapı taşlarını oluşturdu. Kodlama tarafında ise temel kullanıcı arayüzü ve oynanışa dair ana sistemler test edilerek uygulamaya geçirildi. Ses ve görsel efekt görevleri için gerekli hazırlıklar yapılmış, sonraki sprintlerde aktif olarak işlenecek alanlar belirlenmiştir.
   - Sprint sonunda ortaya çıkan yapı, oyunun ilk oynanabilir ön prototipini oluşturacak seviyeye ulaşmıştır. Görevlerin hem tamamlanma oranı hem de birbirine entegre çalışabilirliği açısından bu sprint başarıyla sonuçlanmıştır.
 
