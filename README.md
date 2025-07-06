@@ -92,7 +92,7 @@ Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı g
 ![Screenshot_40](https://github.com/user-attachments/assets/95906182-7466-4c3a-b46c-24516810500a)
 ![Screenshot_44](https://github.com/user-attachments/assets/435165c7-4a54-4dd9-a816-84d0f9d5ae6a)
 
-
+**(LÜTFEN ÜRÜNÜN VİDEOLARINI İZLEYİNİZ, SESLERİMİZ OLDUĞU İÇİN SESİ AÇMAYI UNUTMAYIN)**
 
 https://github.com/user-attachments/assets/74d802eb-dcdc-41a8-8e64-ebf114343415
 
@@ -100,7 +100,7 @@ https://github.com/user-attachments/assets/74d802eb-dcdc-41a8-8e64-ebf114343415
 
 https://github.com/user-attachments/assets/4abbe2fa-cf3f-4943-9a1e-49305232722a
 
-(Lütfen ürünün videolarını izleyiniz, sesi açmayı unutmayın.)
+**(LÜTFEN ÜRÜNÜN VİDEOLARINI İZLEYİNİZ, SESLERİMİZ OLDUĞU İÇİN SESİ AÇMAYI UNUTMAYIN)**
 
 
 </details>
