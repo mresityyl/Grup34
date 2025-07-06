@@ -11,11 +11,11 @@
 
 |    | <div align="center">Name</div>   | <div align="center">Title</div>  | <div align="center">Socials</div>     |
 | :-----------: | :------------------------ | :------------------ | :----------------------------------: |
-|   | İzzet Kadir Eryılmaz     | Product Owner     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/izzetkadireryilmaz/) |
-|   | Nazlı Vayvalakyan     | Scrum Master     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/nazlivayvalakyan/) |
-|   | Ogün Foan     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/ogunfoan/) |
-|   | Alin Kısakürek     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/alin-k%C4%B1sak%C3%BCrek-48b61b305/) | 
-|   | Muhammet Reşit Yayla     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/muhammet-resit-yayla/) |
+| ![Adsız tasarım (4)](https://github.com/user-attachments/assets/b5263303-41e2-4221-b940-4e080889fe58)| İzzet Kadir Eryılmaz     | Product Owner     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/izzetkadireryilmaz/) |
+|  ![Adsız tasarım (2)](https://github.com/user-attachments/assets/7dc58318-4dcc-440c-a8ea-46c7c9d5321f)| Nazlı Vayvalakyan     | Scrum Master     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/nazlivayvalakyan/) |
+| ![Adsız tasarım (1)](https://github.com/user-attachments/assets/640686cc-8604-46bc-8ccc-9b826108d0dd)| Ogün Foan     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/ogunfoan/) |
+| ![Adsız tasarım (3)](https://github.com/user-attachments/assets/f0a27994-18ca-4688-873f-a4bd0122fcc7)| Alin Kısakürek     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/alin-k%C4%B1sak%C3%BCrek-48b61b305/) | 
+|  ![Adsız tasarım (5)](https://github.com/user-attachments/assets/4fd86524-32a9-4a45-8273-5bbdb4b3588c)| Muhammet Reşit Yayla     | Developer     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/muhammet-resit-yayla/) |
 
 ## Oyun İsmi
 
@@ -91,6 +91,7 @@ Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı g
 ![Screenshot_37](https://github.com/user-attachments/assets/877abd52-150e-4e11-b75a-5149b6e4137b)
 ![Screenshot_40](https://github.com/user-attachments/assets/95906182-7466-4c3a-b46c-24516810500a)
 ![Screenshot_44](https://github.com/user-attachments/assets/435165c7-4a54-4dd9-a816-84d0f9d5ae6a)
+
 
 **(LÜTFEN ÜRÜNÜN VİDEOLARINI İZLEYİNİZ, SESLERİMİZ OLDUĞU İÇİN SESİ AÇMAYI UNUTMAYIN)**
 
