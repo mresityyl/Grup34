@@ -79,5 +79,24 @@ Yanlış yorumlanan bir ipucu, zamanında bulunamayan bir parça veya bastırıl
 
 - **Daily Scrum**: Sprint süresince ekip üyeleri, günlük ilerlemelerini yazılı olarak **WhatsApp** üzerinden paylaşmıştır. Bu günlük bildirimler, sürecin şeffaf şekilde takip edilmesini sağlamış ve ekip içi görünürlüğü artırmıştır. Teknik kararlar, hızlı yönlendirme ve eş zamanlı bilgi aktarımı gereken durumlarda ise **Slack** üzerinden sesli görüşmeler gerçekleştirilmiştir. Bu iletişim dengesi, sprint boyunca hem yazılı kayıt oluşturulmasını hem de anlık koordinasyonun sağlıklı yürütülmesini mümkün kılmıştır. Ayrıca, sprint boyunca **her üç günde** bir planlı ekip toplantısı yapılacak şekilde yapılandırılmıştır. Bu toplantılar, biriken sorunların paylaşılması, ekip uyumunun korunması ve görev geçişlerinin daha net biçimde yönetilmesi açısından oldukça verimli geçmiştir.
 
-Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı günleri ve kaç saat sürdüğü arşivlenmek üzere Imgur üzerinde belgelenmektedir.
+Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı günleri ve kaç saat sürdüğü arşivlenmek üzere Imgur üzerinde belgelenmektedir. [Sprint 1 – Daily Scrum Documentation](https://imgur.com/a/Y2zcalS)
 
+- **Sprint 1 Board**: ![Screenshot_27](https://github.com/user-attachments/assets/394cd225-702a-4684-be35-4cf7afc89bb1)
+![Screenshot_29](https://github.com/user-attachments/assets/02f17ba3-44d7-4dfe-8073-d583e9de7b49)
+
+
+<details> <summary><h3>False Awakening – Oyun İçi Durum Görselleri</h3></summary>
+
+- **Sprint Review**: 
+  - Sprint 1 boyunca, oyunun temel iskeletini oluşturan ana sistemler başarıyla hayata geçirildi. Planlanan tüm görevler tamamlandı ve geliştirme süreci, oyuncunun deneyimleyeceği ilk sahnelere yönelik somut çıktılarla ilerledi. Ana menü sistemi, rüya başlatma mekanizması, defter etkileşimleri, ışık/fener sistemi ve sahne geçişleri eksiksiz bir şekilde çalışır duruma getirildi.
+
+- Görsel tasarım tarafında Elias’ın kaldığı odanın 3D modeli tamamlandı ve hastane ortamının ilk koridorları şekillendirildi. Bu alanlar, oyunun atmosferini yansıtan ilk çevresel yapı taşlarını oluşturdu. Kodlama tarafında ise temel kullanıcı arayüzü ve oynanışa dair ana sistemler test edilerek uygulamaya geçirildi. Ses ve görsel efekt görevleri için gerekli hazırlıklar yapılmış, sonraki sprintlerde aktif olarak işlenecek alanlar belirlenmiştir.
+
+- Sprint sonunda ortaya çıkan yapı, oyunun ilk oynanabilir ön prototipini oluşturacak seviyeye ulaşmıştır. Görevlerin hem tamamlanma oranı hem de birbirine entegre çalışabilirliği açısından bu sprint başarıyla sonuçlanmıştır.
+
+- **Sprint Retrospective:** 
+  - Ekip iki gruba bölündü, bir grup oyunun kalan 4 bölümü üzerinde çalışarak ilerlemeye devam edecek; diğer ekip ise oluşturulan bölümlerin eksiklikleri üzerinde çalışacak ve oyunu final aşamasına hazır hale getirecek.
+    - Grup 1: İsmail, İncila
+    - Grup 2: İbrahim, İpek, İrfan
+  - Toplantıların belirli bir zaman aralığıyla gerçekleştirilmesi kararlaştırıldı.
+  - Üretim aşamasında görev alan ekip üyelerine gelecek bölümlerde ihtiyaç duyulabilecek assetlerin üretimi için listeler hazırlandı
