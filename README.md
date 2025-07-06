@@ -86,6 +86,12 @@ Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı g
 
 
 <details> <summary><h3>False Awakening – Oyun İçi Durum Görselleri</h3></summary>
+  
+![Screenshot_36](https://github.com/user-attachments/assets/edbcaa79-94af-4444-9fcc-4526560060d0)
+![Screenshot_37](https://github.com/user-attachments/assets/877abd52-150e-4e11-b75a-5149b6e4137b)
+![Screenshot_40](https://github.com/user-attachments/assets/95906182-7466-4c3a-b46c-24516810500a)
+![Screenshot_44](https://github.com/user-attachments/assets/435165c7-4a54-4dd9-a816-84d0f9d5ae6a)
+
 </details>
 
 - **Sprint Review**: 
