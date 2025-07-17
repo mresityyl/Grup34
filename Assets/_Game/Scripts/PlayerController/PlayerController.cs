@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Camera playerCamera;
     private CharacterController characterController;
 
-
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -29,7 +28,6 @@ public class PlayerController : MonoBehaviour
         playerMovement.PlayerMove(characterController, playerCamera, playerInput.MoveInput, playerInput.SprintToggledOn);
 
         playerMovement.PlayerCrouch(characterController, playerCamera.transform, playerInput.CrouchToggledOn);
-
     }
 
     private void LateUpdate()

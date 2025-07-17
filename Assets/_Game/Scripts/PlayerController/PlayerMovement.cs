@@ -116,14 +116,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //FOV
-        float targetFOV = sprintToggledOn && isMoving ? runFOV : walkFOV;
-
-        if (Mathf.Abs(playerCamera.fieldOfView - targetFOV) > 0.1f)
+        if (!wasCrouching)
         {
-            if (fovTween != null && fovTween.IsActive())
-                fovTween.Kill();
+            float targetFOV = sprintToggledOn && isMoving ? runFOV : walkFOV;
 
-            fovTween = playerCamera.DOFieldOfView(targetFOV, fovDuration);
+            if (Mathf.Abs(playerCamera.fieldOfView - targetFOV) > 0.1f)
+            {
+                if (fovTween != null && fovTween.IsActive())
+                    fovTween.Kill();
+
+                fovTween = playerCamera.DOFieldOfView(targetFOV, fovDuration);
+            }
         }
 
     }

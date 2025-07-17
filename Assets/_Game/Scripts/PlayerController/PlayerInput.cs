@@ -17,6 +17,8 @@ public class PlayerInput : MonoBehaviour, InputSystem_Actions.IPlayerActions
     public event Action OnFlashlightToggle;
     public event Action OnFlashlightTapFeedback;
 
+    public event Action OnInteractTriggered;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -73,6 +75,7 @@ public class PlayerInput : MonoBehaviour, InputSystem_Actions.IPlayerActions
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        
+        if (context.started)
+            OnInteractTriggered?.Invoke();
     }
 }
