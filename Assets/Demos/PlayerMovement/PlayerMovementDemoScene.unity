@@ -405,9 +405,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 715765675297422260, guid: 3a7ea85bb756e64408c195dc60c8b2c5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892070232271046238, guid: 3a7ea85bb756e64408c195dc60c8b2c5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791216636719153520, guid: 3a7ea85bb756e64408c195dc60c8b2c5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441661345272753461, guid: 3a7ea85bb756e64408c195dc60c8b2c5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5313883006595375964, guid: 3a7ea85bb756e64408c195dc60c8b2c5, type: 3}
       propertyPath: m_Name
       value: PlayerMovementDemoScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664045574071689446, guid: 3a7ea85bb756e64408c195dc60c8b2c5, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8440308362638251755, guid: 3a7ea85bb756e64408c195dc60c8b2c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -627,6 +647,9 @@ MonoBehaviour:
   spawnpoints:
   - {fileID: 1519139841}
   TimerCanvas: {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &1199139348010421796
 PrefabInstance:
   m_ObjectHideFlags: 0
