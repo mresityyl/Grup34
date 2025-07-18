@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -19,10 +20,12 @@ public class MonsterMovement : MonoBehaviour
     public LayerMask obstacleLayer;
 
     public bool isChasing;
+    private bool isWaiting;
      
     [Header("Patrol")]
     [SerializeField] private Transform[] points;
     private int destPoint = 0;
+    private float waitTime = 3f;
 
     private void Start()
     {
@@ -33,11 +36,20 @@ public class MonsterMovement : MonoBehaviour
 
     void GotoNextPoint()
     {
-        if (points.Length == 0)
+        if (points.Length == 0 || isWaiting)
             return;
+
+        StartCoroutine(WaitatPoint());
+    }
+
+    IEnumerator WaitatPoint()
+    {
+        isWaiting = true;
+        yield return new WaitForSeconds(waitTime);
 
         agent.destination = points[destPoint].position;
         destPoint = (destPoint + 1) % points.Length;
+        isWaiting = false;
     }
 
     void Update()
@@ -69,8 +81,9 @@ public class MonsterMovement : MonoBehaviour
 
                 if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, rayDistance, obstacleLayer))
                 {
-                    Debug.Log("Oyuncu mesafede ve açýda, AMA görüþ hattý engellendi: " + hit.collider.name);
+                    Debug.Log("Oyuncu mesafede ve açýda, AMA görüþ hattý engellendi: "/* + hit.collider.name*/);
                     isChasing = false;
+
                     // agent.ResetPath(); // Eðer oyuncuyu takip ediyorsa durdur
                 }
                 else
@@ -78,17 +91,21 @@ public class MonsterMovement : MonoBehaviour
                     Debug.Log("Oyuncu tespit edildi! Saldýrýlýyor!");
                     isChasing = true;
                     agent.SetDestination(player.transform.position);
+                    agent.speed = 3;
                 }
 
             }
             else
             {
                 isChasing = false;
+                agent.speed = 1;
             }
         }
         else
         {
             isChasing = false;
+                    agent.speed = 1;
+
         }
 
     }

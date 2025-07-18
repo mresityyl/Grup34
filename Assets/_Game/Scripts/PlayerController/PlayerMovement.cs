@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 smoothVelocity;
 
     [Header("Camera")]
-    [SerializeField] private float sensitivity = 1f;
+    [SerializeField] private float sensitivity = 0.2f;
     [SerializeField] private float maxLookAngle = 70f;
     private float lookAtVertical;
     private float lookAtHorizontal;
@@ -52,7 +52,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 cameraVelocity;
     public LayerMask crouchLayerMask;
 
-
     #endregion
 
     public void InitializeHeadbob()
@@ -80,8 +79,8 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove += transform.right * smoothInput.x;
 
         bool isSprint = sprintToggledOn && !wasCrouching;
-        bool isCrouch = !sprintToggledOn && wasCrouching;
-        float speed = isSprint ? sprintSpeed : isCrouch ? crouchSpeed : walkSpeed;
+        //bool isCrouch = !sprintToggledOn && wasCrouching;
+        float speed = isSprint ? sprintSpeed : wasCrouching ? crouchSpeed : walkSpeed;
         horizontalMove *= speed;
 
         //Gravity
@@ -102,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
         {
             headbobTimer += Time.deltaTime * headbobSpeed;
 
-            float currentBobAmount = sprintToggledOn ? headbobAmount * 2f : wasCrouching ? headbobAmount * 0.5f : headbobAmount;
+            float currentBobAmount = wasCrouching ? headbobAmount * 0.5f : sprintToggledOn ? headbobAmount * 2f : headbobAmount;
             float bobX = Mathf.Sin(headbobTimer) * currentBobAmount;
             float bobY = Mathf.Cos(headbobTimer * 2) * currentBobAmount;
 
