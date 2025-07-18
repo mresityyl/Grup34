@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
+using static Unity.VisualScripting.Member;
 
 public class PlayerAudioController : MonoBehaviour
 {
@@ -12,16 +14,16 @@ public class PlayerAudioController : MonoBehaviour
     [SerializeField] private AudioSource movementAudioSource;
     [SerializeField] private AudioSource heartbeatAudioSource;
 
-    public AudioMixerGroup walkGroup;
-    public AudioMixerGroup runGroup;
-    public AudioMixerGroup heart;
+    //[Header("Audio Mixer Groups")]
+    //[SerializeField] private AudioMixerGroup walkGroup;
+    //[SerializeField] private AudioMixerGroup runGroup;
 
     private Vector2 moveInput;
     private bool sprintToggledOn;
     private bool crouchToggledOn;
 
     [Header("Other")]
-    public float sprintTimer;
+    private float sprintTimer;
 
     void Update()
     {
@@ -30,28 +32,28 @@ public class PlayerAudioController : MonoBehaviour
             if (sprintToggledOn)
             {
                 if (!crouchToggledOn)
-                    TryPlaySound(movementAudioSource, movementAudioClips[1], true, true, .5f); //Run
+                    TryPlaySound(movementAudioSource, movementAudioClips[1], true, .2f); //Run
 
                 sprintTimer += Time.deltaTime;
 
-                if (sprintTimer > 15)
-                    TryhealtPlaySound(heartbeatAudioSource, heartbeatAudioClips[2]);
+                if (sprintTimer > 30)
+                    TryHeartbeatPlaySound(heartbeatAudioSource, heartbeatAudioClips[2], .55f);
+                else if (sprintTimer > 20)
+                    TryHeartbeatPlaySound(heartbeatAudioSource, heartbeatAudioClips[1], .55f);
                 else if (sprintTimer > 10)
-                    TryhealtPlaySound(heartbeatAudioSource, heartbeatAudioClips[1]);
-                else if (sprintTimer > 5)
-                    TryhealtPlaySound(heartbeatAudioSource, heartbeatAudioClips[0]);
+                    TryHeartbeatPlaySound(heartbeatAudioSource, heartbeatAudioClips[0], .55f);
             }
             else
             {
-                TryPlaySound(movementAudioSource, movementAudioClips[0], false, true, 1f); //Walk
-                StopSound(heartbeatAudioSource);
+                TryPlaySound(movementAudioSource, movementAudioClips[0], false, .45f); //Walk
+                StopSound(heartbeatAudioSource, true);
                 sprintTimer = 0f;
             }
         }
         else
         {
-            StopSound(movementAudioSource);
-            StopSound(heartbeatAudioSource);
+            StopSound(movementAudioSource, false);
+            StopSound(heartbeatAudioSource, true);
             sprintTimer = 0f;
         }
     }
@@ -62,7 +64,7 @@ public class PlayerAudioController : MonoBehaviour
         this.sprintToggledOn = sprintToggledOn;
         this.crouchToggledOn = crouchToggledOn;
     }
-    private void TryPlaySound(AudioSource source, AudioClip clip, bool isRun, bool isLoop = false, float volume = 1f)
+    private void TryPlaySound(AudioSource source, AudioClip clip, bool isRun, float volume = 1f)
     {
         if (source.isPlaying && source.clip == clip)
             return;
@@ -70,29 +72,40 @@ public class PlayerAudioController : MonoBehaviour
         source.Stop();
         source.clip = clip;
         source.volume = volume;
-        source.loop = isLoop;
-        if(isRun)
-            source.outputAudioMixerGroup = runGroup;
+        source.loop = true;
+        //if(isRun)
+        //    source.outputAudioMixerGroup = runGroup;
+        //else
+        //    source.outputAudioMixerGroup = walkGroup;
+        source.Play();
+    }
+
+    private void TryHeartbeatPlaySound(AudioSource source, AudioClip clip, float volume = 1f)
+    {
+        if (source.isPlaying && source.clip == clip)
+            return;
+
+        source.Stop();
+        source.clip = clip;
+        source.volume = volume;
+        source.loop = false;
+        source.Play();
+    }
+    private void StopSound(AudioSource source, bool latencySoundStop)
+    {
+        if(!source.isPlaying) return;
+
+        if (latencySoundStop)
+            StartCoroutine(LatencySoundStop(source));
         else
-            source.outputAudioMixerGroup = walkGroup;
-        source.Play();
+            source.Stop();
     }
 
-    private void TryhealtPlaySound(AudioSource source, AudioClip clip, bool isLoop = false, float volume = 1f)
-    {
-        if (source.isPlaying && source.clip == clip)
-            return;
 
-        source.Stop();
-        source.clip = clip;
-        source.volume = volume;
-        source.loop = isLoop;
-            source.outputAudioMixerGroup = heart;
-        source.Play();
-    }
-
-    private void StopSound(AudioSource source)
+    IEnumerator LatencySoundStop(AudioSource source)
     {
+        TryHeartbeatPlaySound(source, heartbeatAudioClips[0], .55f);
+        yield return new WaitForSeconds(4);
         source.Stop();
     }
 }
