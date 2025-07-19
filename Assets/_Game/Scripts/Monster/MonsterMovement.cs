@@ -1,8 +1,11 @@
 using DG.Tweening;
 using System.Collections;
+using System.Threading;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 using UnityEngine.UI;
 
 public class MonsterMovement : MonoBehaviour
@@ -21,11 +24,14 @@ public class MonsterMovement : MonoBehaviour
 
     public bool isChasing;
     private bool isWaiting;
-     
+
+    public GameObject monsterJumpScare;
+    public GameObject monster;
     [Header("Patrol")]
     [SerializeField] private Transform[] points;
     private int destPoint = 0;
     private float waitTime = 3f;
+    public Animator controller;
 
     private void Start()
     {
@@ -45,11 +51,13 @@ public class MonsterMovement : MonoBehaviour
     IEnumerator WaitatPoint()
     {
         isWaiting = true;
+        controller.SetBool("isWaiting", isWaiting);
         yield return new WaitForSeconds(waitTime);
 
         agent.destination = points[destPoint].position;
         destPoint = (destPoint + 1) % points.Length;
         isWaiting = false;
+        controller.SetBool("isWaiting", isWaiting);
     }
 
     void Update()
@@ -142,21 +150,35 @@ public class MonsterMovement : MonoBehaviour
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, detectionDistance);
     }
-
+    bool scareActive= false;
     private void OnTriggerEnter(Collider other)
     {
         if (!jumpScare) return;
-        if (scareImage == null) return;
+        //if (scareImage == null) return;
 
         AudioSource.Play();
-        scareImage.DOScale(Vector3.one * 2f, 0.5f).OnComplete(() =>
-        {
-            // 2 saniye bekle
-            DOVirtual.DelayedCall(3.5f, () =>
-            {
-                scareImage.DOScale(Vector3.zero, 0.4f);
-            });
-        }); 
-        
+        if(!scareActive)
+            StartCoroutine(JumpScareTimer());
+        Debug.Log("TEmas etti!!!!");
+        //scareImage.DOScale(Vector3.one * 2f, 0.5f).OnComplete(() =>
+        //{
+        //    // 2 saniye bekle
+        //    DOVirtual.DelayedCall(3.5f, () =>
+        //    {
+        //        scareImage.DOScale(Vector3.zero, 0.4f);
+        //    });
+        //}); 
+
+    }
+
+    IEnumerator JumpScareTimer()
+    {
+        scareActive = true;
+        monster.SetActive(false);
+        monsterJumpScare.SetActive(true);
+        yield return new WaitForSeconds(5);
+        monsterJumpScare.SetActive(false);
+        monster.SetActive(true);
+        scareActive = false;
     }
 }
