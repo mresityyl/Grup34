@@ -33,10 +33,15 @@ public class MonsterMovement : MonoBehaviour
     private int destPoint = 0;
     private float waitTime = 3f;
     public Animator controller;
+    
+    AsyncOperation sceneLoadingOperation;
 
     private void Start()
     {
         agent.autoBraking = false;
+
+        sceneLoadingOperation = SceneManager.LoadSceneAsync("HospitalRoomMap");
+        sceneLoadingOperation.allowSceneActivation = false; // Anýnda geçmesin!
 
         GotoNextPoint();
     }
@@ -181,8 +186,10 @@ public class MonsterMovement : MonoBehaviour
         yield return new WaitForSeconds(3);
         //monsterJumpScare.SetActive(false);
         //monster.SetActive(true);
-        scareActive = false;
+        //scareActive = false;
 
-        SceneManager.LoadScene("HospitalRoomMap");
+        //SceneManager.LoadScene("HospitalRoomMap");
+        sceneLoadingOperation.allowSceneActivation = true;
+
     }
 }
