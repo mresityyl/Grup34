@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Camera playerCamera;
     private CharacterController characterController;
 
+    public bool canMove = true;
+
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -27,6 +29,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (!canMove) return;
+
         playerMovement.PlayerMove(characterController, playerCamera, playerInput.MoveInput, playerInput.SprintToggledOn);
 
         playerAudioController.SetValues(playerInput.MoveInput, playerInput.SprintToggledOn, playerInput.CrouchToggledOn);

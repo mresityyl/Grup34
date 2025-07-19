@@ -62,6 +62,7 @@ MonoBehaviour:
     m_Bits: 512
   isChasing: 0
   monsterJumpScare: {fileID: 0}
+  monster: {fileID: 1128503200645453842}
   points:
   - {fileID: 0}
   - {fileID: 0}
@@ -104,10 +105,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 139f8dfa676e4074ab658e7cbf9f309c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 139f8dfa676e4074ab658e7cbf9f309c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0

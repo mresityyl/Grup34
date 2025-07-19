@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MonsterMovement : MonoBehaviour
@@ -159,7 +160,7 @@ public class MonsterMovement : MonoBehaviour
         AudioSource.Play();
         if(!scareActive)
             StartCoroutine(JumpScareTimer());
-        Debug.Log("TEmas etti!!!!");
+        
         //scareImage.DOScale(Vector3.one * 2f, 0.5f).OnComplete(() =>
         //{
         //    // 2 saniye bekle
@@ -176,9 +177,12 @@ public class MonsterMovement : MonoBehaviour
         scareActive = true;
         monster.SetActive(false);
         monsterJumpScare.SetActive(true);
-        yield return new WaitForSeconds(5);
-        monsterJumpScare.SetActive(false);
-        monster.SetActive(true);
+        player.gameObject.GetComponent<PlayerController>().canMove = false;
+        yield return new WaitForSeconds(3);
+        //monsterJumpScare.SetActive(false);
+        //monster.SetActive(true);
         scareActive = false;
+
+        SceneManager.LoadScene("HospitalRoomMap");
     }
 }

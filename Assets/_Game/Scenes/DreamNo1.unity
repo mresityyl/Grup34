@@ -303,10 +303,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 71898295}
     - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
-      propertyPath: monster
-      value: 
-      objectReference: {fileID: 1592767544}
-    - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
       propertyPath: monsterJumpScare
       value: 
       objectReference: {fileID: 1940658473}
@@ -342,18 +338,6 @@ PrefabInstance:
       propertyPath: 'points.Array.data[7]'
       value: 
       objectReference: {fileID: 1581425183}
-    - target: {fileID: 5661964565455327119, guid: db106573558c37b4089bcdb626350c92, type: 3}
-      propertyPath: m_Volume
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5661964565455327119, guid: db106573558c37b4089bcdb626350c92, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 139f8dfa676e4074ab658e7cbf9f309c, type: 3}
-    - target: {fileID: 5661964565455327119, guid: db106573558c37b4089bcdb626350c92, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 139f8dfa676e4074ab658e7cbf9f309c, type: 3}
     - target: {fileID: 5946563284417836417, guid: db106573558c37b4089bcdb626350c92, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.6
@@ -6904,11 +6888,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585427907}
   m_Mesh: {fileID: 8195499056177016675, guid: 0af6d2221d33d9f4c962c078e2fad8ae, type: 3}
---- !u!1 &1592767544 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1128503200645453842, guid: db106573558c37b4089bcdb626350c92, type: 3}
-  m_PrefabInstance: {fileID: 53160778}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1603145479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5146681718063874739, guid: 1dcacf88880b8483baa11d1dbd4bd64d, type: 3}
