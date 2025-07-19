@@ -2230,14 +2230,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScareTrigger
       objectReference: {fileID: 0}
-    - target: {fileID: 6608433156013425587, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 06206282d50b9cf44ba900f42ea1b307, type: 3}
-    - target: {fileID: 6608433156013425587, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 06206282d50b9cf44ba900f42ea1b307, type: 3}
     - target: {fileID: 8361813447609068910, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.09
@@ -2305,14 +2297,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScareTrigger (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 6608433156013425587, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 91552bfa2d9c37f4c8253d8f9b17892b, type: 3}
-    - target: {fileID: 6608433156013425587, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 91552bfa2d9c37f4c8253d8f9b17892b, type: 3}
     - target: {fileID: 8361813447609068910, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.56
@@ -2520,7 +2504,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.58
+      value: -9.68
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2528,11 +2512,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.036448132
+      value: -0.70173025
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2540,7 +2524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9993356
+      value: -0.7124428
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2552,7 +2536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -184.178
+      value: -269.13202
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2731,14 +2715,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScareTrigger (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6608433156013425587, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 6a1f3cf9210abfb49a52b64a3de9e095, type: 3}
-    - target: {fileID: 6608433156013425587, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6a1f3cf9210abfb49a52b64a3de9e095, type: 3}
     - target: {fileID: 8361813447609068910, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.5
@@ -3549,14 +3525,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScareTrigger (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 6608433156013425587, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f41e788df3d719429229c8e09318546, type: 3}
-    - target: {fileID: 6608433156013425587, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f41e788df3d719429229c8e09318546, type: 3}
     - target: {fileID: 8361813447609068910, guid: 5339f212e67dac74d9c787f3923c5080, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.27
@@ -8391,13 +8359,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6197389903544160921, guid: 4f378fe0ce3a73e45a705d95ba87dc71, type: 3}
+      propertyPath: playScareFrequency
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197389903544160921, guid: 4f378fe0ce3a73e45a705d95ba87dc71, type: 3}
+      propertyPath: scareChancePercent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197389903544160921, guid: 4f378fe0ce3a73e45a705d95ba87dc71, type: 3}
       propertyPath: scareClips.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6197389903544160921, guid: 4f378fe0ce3a73e45a705d95ba87dc71, type: 3}
+      propertyPath: 'scareClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 620f62e1410b45d4496f2aab37b59838, type: 3}
+    - target: {fileID: 6197389903544160921, guid: 4f378fe0ce3a73e45a705d95ba87dc71, type: 3}
       propertyPath: 'scareClips.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 8015bd5a1add60246b29a5bbf686fd53, type: 3}
     - target: {fileID: 6197389903544160921, guid: 4f378fe0ce3a73e45a705d95ba87dc71, type: 3}
       propertyPath: 'scareClips.Array.data[2]'
       value: 
