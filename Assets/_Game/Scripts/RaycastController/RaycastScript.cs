@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
 
@@ -10,7 +11,9 @@ public class RaycastScript : MonoBehaviour
     public Transform[] spawnpoints;
     CharacterController controller;
     public Canvas TimerCanvas;
-    public LayerMask layerMask;
+    public LayerMask layerMask, interactableLayer;
+
+    public TMP_Text interactableText;
 
     private void Awake()
     {
@@ -24,15 +27,19 @@ public class RaycastScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        interactableText.enabled = false;
+
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        RaycastHit hit;
+
+        // Etkileþimli nesneler için raycast
+        if (Physics.Raycast(ray, out hit, rayDistance, interactableLayer))
         {
-            Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-            RaycastHit hit;
+            interactableText.enabled = true;
 
-            if (Physics.Raycast(ray, out hit, rayDistance, layerMask))
+            // E tuþuna basýldýysa etkileþimi çalýþtýr
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("Çarptýðýn nesne: " + hit.collider.name);
-
                 switch (hit.collider.tag)
                 {
                     case "Yatak":
@@ -44,22 +51,17 @@ public class RaycastScript : MonoBehaviour
                         {
                             Debug.Log("Rüyaya Dalýyorsunuz.");
                         }
-                    break;
+                        break;
 
                     default:
                         Debug.Log("Hiçbir iþlem yapýlmadý.");
                         break;
                 }
             }
-            else
-            {
-                Debug.Log("Hiçbir þeye çarpmadý.");
-            }
         }
-
     }
 
-    private IEnumerator TeleportTo(Vector3 targetPos)
+    private IEnumerator TeleportTo(Vector3 targetPos) // artýk sahne deðiþeceði için burasý iptal edilecek.
     {
         controller.enabled = false;      // CharacterController'ý devre dýþý býrak
         transform.position = targetPos;  // Pozisyonu deðiþtir
