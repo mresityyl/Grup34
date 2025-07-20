@@ -225,6 +225,9 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 55
+  Bed: {fileID: 0}
+  DoctorRoomSound: {fileID: 0}
+  MissionText: {fileID: 0}
   playButton: {fileID: 4074734544763423468}
   stopButton: {fileID: 6182180246314414870}
 --- !u!82 &3037974627397798250
