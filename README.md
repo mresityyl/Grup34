@@ -101,7 +101,9 @@ False Awakening, güçlü anlatısı, atmosferik yapısı ve derin psikolojik te
 
 # Sprint 1
 
-- **Sprint Notları**: Sprint 1 kapsamındaki görevler, proje boyunca tanımlanan kullanıcı hikâyelerine dayalı olarak backlog kartlarına işlenmiştir. Her kart, ilgili görevin neyi kapsadığına dair açıklamalar ve öncelik bilgileriyle birlikte detaylandırılmıştır. Bu yapı sayesinde ekip üyeleri, sprint boyunca hangi görevlerin ne amaçla yapıldığını ve nasıl bir önceliğe sahip olduğunu kolaylıkla takip edebilmektedir. Bu sprintin temel hedefi, oyuncunun ilk deneyimleyeceği oyun ortamına ait temel sahnelerin hazırlanması, ilk mekan tasarımlarının modellenmesi ve başlangıçtaki temel oyun mekaniklerinin uygulanabilir hâle getirilmesidir. Özellikle Rüya Başlatma ve Sahne Geçişi, Ana Menü Sistemi, 3D Environment Tasarımı ve Işık/Fener Sistemi gibi kritik yapılar bu sprintte başarıyla tamamlanmıştır.
+- **Sprint Notları**: Sprint 2 kapsamında yürütülen görevler, proje boyunca tanımlanan kullanıcı hikâyelerine uygun şekilde backlog kartlarına aktarılmıştır. Her bir kart, ilgili görev tanımı, öncelik seviyesi ve Sprint 1'e göre daha açıklayıcı detaylar ile birlikte netleştirilmiş; bu sayede ekip üyeleri, sprint süresince görevlerin kapsamını, amacını ve önem derecesini şeffaf bir şekilde takip edebilmiştir. Bu sprintin temel hedefi, oyuncunun oyunla kuracağı etkileşimi ve deneyimi derinleştiren ses sistemlerinin, görev takip yapısının ve çeşitli UI desteklerinin oyuna entegre edilmesidir. Özellikle Menü Sesleri, Rüyada Görev Takibi, Takip Eden Varlık Sistemi, Shader Destekli Etkileşimli Obje Görselleştirmeleri ve Dinamik Ses Efektleri gibi yapılar bu sprintte başarıyla tamamlanmıştır.
+
+Sprint sonunda, oyuncunun hem görsel hem işitsel olarak yönlendirilmesini sağlayacak tüm temel sistemler işlevsel hâle getirilmiş ve oyun deneyiminin atmosferik gücü önemli ölçüde artırılmıştır.
   
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
@@ -109,11 +111,11 @@ False Awakening, güçlü anlatısı, atmosferik yapısı ve derin psikolojik te
 
 - **Backlog düzeni ve Story seçimleri**: Backlog; oyunun tüm geliştirme sürecine dair görevleri kapsamaktadır ve sprint planlamasına uygun şekilde yapılandırılmıştır. Miro panosu üzerindeki kartlar, görev türlerine göre renk kodlarıyla ayrılmıştır turuncu item'lar _tasarım_, mavi item'lar _kodlama/geliştirme_, sarı item'lar _görsel efekt_, mor item'lar _ses_ gösterirken, yeşil item'lar ise _türü olmayan_ görevleri temsil etmektedir. Sprint 1’de yer alan görevler bu renk sistemine uygun biçimde seçilmiş; oyunun temel yapısını kuracak şekilde planlanmıştır.
 
-- **Daily Scrum**: Sprint süresince ekip üyeleri, günlük ilerlemelerini yazılı olarak **WhatsApp** üzerinden paylaşmıştır. Bu günlük bildirimler, sürecin şeffaf şekilde takip edilmesini sağlamış ve ekip içi görünürlüğü artırmıştır. Teknik kararlar, hızlı yönlendirme ve eş zamanlı bilgi aktarımı gereken durumlarda ise **Slack** üzerinden sesli görüşmeler gerçekleştirilmiştir. Bu iletişim dengesi, sprint boyunca hem yazılı kayıt oluşturulmasını hem de anlık koordinasyonun sağlıklı yürütülmesini mümkün kılmıştır. Ayrıca, sprint boyunca **her üç günde** bir planlı ekip toplantısı yapılacak şekilde yapılandırılmıştır. Bu toplantılar, biriken sorunların paylaşılması, ekip uyumunun korunması ve görev geçişlerinin daha net biçimde yönetilmesi açısından oldukça verimli geçmiştir.
+- **Daily Scrum**: Sprint süresince ekip üyeleri, günlük ilerlemelerini yazılı olarak **WhatsApp** üzerinden paylaşmıştır. Bu günlük bildirimler, sürecin şeffaf şekilde takip edilmesini sağlamış ve ekip içi görünürlüğü artırmıştır. Teknik kararlar, hızlı yönlendirme ve eş zamanlı bilgi aktarımı gereken durumlarda ise **Slack** üzerinden sesli görüşmeler gerçekleştirilmiştir. Sprint 2'nin ilk haftasında, her üç günde bir düzenli ekip toplantısı yapılmıştır. Bu toplantılar, biriken sorunların paylaşılması, görev durumlarının değerlendirilmesi ve ekip uyumunun korunması açısından verimli geçmiştir. İkinci haftada ise sprintin artan temposu ve görev yoğunluğu nedeniyle ekip, ihtiyaçlar doğrultusunda neredeyse her gün bir araya gelerek anlık toplantılar gerçekleştirmiştir. Bu yapı, iletişim sürekliliğini güçlendirmiş ve görev geçişlerinin daha sağlıklı yönetilmesini sağlamıştır.
 
-Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı günleri ve kaç saat sürdüğü arşivlenmek üzere Imgur üzerinde belgelenmektedir. [Sprint 1 – Daily Scrum Documentation](https://imgur.com/a/jTTq7LP)
+Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı günleri ve kaç saat sürdüğü arşivlenmek üzere Imgur üzerinde belgelenmektedir. [Sprint 2 – Daily Scrum Documentation](https://imgur.com/a/gJnV0MP)
 
-- **Sprint 1 Board**: ![Screenshot_27](https://github.com/user-attachments/assets/394cd225-702a-4684-be35-4cf7afc89bb1)
+- **Sprint 2 Board**: ![Screenshot_27](https://github.com/user-attachments/assets/394cd225-702a-4684-be35-4cf7afc89bb1)
 ![Screenshot_29](https://github.com/user-attachments/assets/02f17ba3-44d7-4dfe-8073-d583e9de7b49)
 
 
@@ -139,12 +141,30 @@ https://github.com/user-attachments/assets/4abbe2fa-cf3f-4943-9a1e-49305232722a
 </details>
 
 - **Sprint Review**: 
-  - Sprint 1 boyunca, oyunun temel iskeletini oluşturan ana sistemler başarıyla hayata geçirildi. Planlanan tüm görevler tamamlandı ve geliştirme süreci, oyuncunun deneyimleyeceği ilk sahnelere yönelik somut çıktılarla ilerledi. Ana menü sistemi, rüya başlatma mekanizması, ışık/fener sistemi ve sahne geçişleri eksiksiz bir şekilde çalışır duruma getirildi.
-  - Görsel tasarım tarafında Elias’ın kaldığı odanın 3D modeli tamamlandı ve hastane ortamının ilk koridorları şekillendirildi. Bu alanlar, oyunun atmosferini yansıtan ilk çevresel yapı taşlarını oluşturdu. Kodlama tarafında ise temel kullanıcı arayüzü ve oynanışa dair ana sistemler test edilerek uygulamaya geçirildi. Ses ve görsel efekt görevleri için gerekli hazırlıklar yapılmış, sonraki sprintlerde aktif olarak işlenecek alanlar belirlenmiştir.
-  - Sprint sonunda ortaya çıkan yapı, oyunun ilk oynanabilir ön prototipini oluşturacak seviyeye ulaşmıştır. Görevlerin hem tamamlanma oranı hem de birbirine entegre çalışabilirliği açısından bu sprint başarıyla sonuçlanmıştır.
+ - Sprint 2 boyunca, oyuncunun oyunla kuracağı etkileşimi ve deneyimi derinleştiren sistemler geliştirilmiş; planlanan tüm görevler başarıyla tamamlanmıştır. Görev takip sistemi, ses entegrasyonu, shader tabanlı etkileşimli nesneler ve takip eden varlık sistemi oyuna işlevsel biçimde entegre edilmiştir.
+- Teknik tarafta, shader geçişleri, mouse temelli etkileşimler ve görev arayüzü oyuna dahil edilmiştir. Menü ve oyun içi ses efektleri, radyo sistemi ve çevresel fısıltılarla birlikte atmosfer güçlendirilmiştir. Tüm bu yapılar önceki sprintte oluşturulan temel sistemlerle uyumlu şekilde test edilerek uygulanmıştır.
+- Sprint sonunda, oyunun oynanabilirliği ve deneyimsel derinliği belirgin biçimde artmış; görsel ve işitsel bileşenlerin entegre çalışması sayesinde daha bütünlüklü bir yapı ortaya çıkmıştır. Tüm görevlerin eksiksiz tamamlanması, sprintin hedeflerine tam anlamıyla ulaşıldığını göstermektedir.
 
 - **Sprint Retrospective:** 
   - Sprint 1 süresince ekip genel olarak planlı, uyumlu ve üretken bir çalışma yürüttü. Görev dağılımları, bireysel uzmanlık alanlarına göre belirlendi; iletişim ve iş takibi düzenli şekilde ilerledi. Geliştirilen yapı sayesinde, tamamlanan tüm görevler zamanında ve entegre biçimde teslim edildi.
   - Bu sprintte özellikle GitHub üzerinde yaşanan küçük bir entegrasyon çakışması, ekip üyelerinin birbirine hızlıca destek olması sayesinde kısa sürede çözüldü. Bu örnek, teknik işbirliğinin ne kadar etkin çalıştığını gösterdi.
   - Sprint 1 sonunda, görev tamamlama oranı, ekip içi iletişim verimliliği ve karşılıklı iş birliği beklentilerin üzerindeydi. Ancak süreç içinde ortaya çıkan küçük aksamalar ve içerik eksikleri göz önüne alınarak, sonraki sprintlerde görev kartlarının daha detaylı tanımlanmasına karar verildi.
 
+---
+
+# Sprint 1
+
+- **Sprint Notları**: Sprint 2 kapsamındaki görevler, proje boyunca tanımlanan kullanıcı hikâyelerine dayalı olarak backlog kartlarına işlenmiştir. Her kart, ilgili görevin neyi kapsadığına dair açıklamalar ve öncelik bilgileriyle birlikte detaylandırılmıştır. Bu yapı sayesinde ekip üyeleri, sprint boyunca hangi görevlerin ne amaçla yapıldığını ve nasıl bir önceliğe sahip olduğunu kolaylıkla takip edebilmektedir. Bu sprintin temel hedefi, oyuncunun ilk deneyimleyeceği oyun ortamına ait temel sahnelerin hazırlanması, ilk mekan tasarımlarının modellenmesi ve başlangıçtaki temel oyun mekaniklerinin uygulanabilir hâle getirilmesidir. Özellikle Rüya Başlatma ve Sahne Geçişi, Ana Menü Sistemi, 3D Environment Tasarımı ve Işık/Fener Sistemi gibi kritik yapılar bu sprintte başarıyla tamamlanmıştır.
+  
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Proje süreci toplamda 300 puanlık bir iş yükü üzerinden yapılandırılmıştır. Bu puan, görevlerin öncelik seviyelerine (High, Medium, Low) göre değerlendirilerek dağıtılmıştır. Her sprint için yaklaşık 100 puanlık görev belirlenmiş ve Sprint 2’ye ait görevlerin tamamı başarıyla tamamlanarak “Done” sütununa aktarılmıştır. Bu kapsamda Sprint 2, planlandığı şekilde 100/100 puanla başarıyla tamamlanmıştır. Sistem, ilerleyişin ölçülebilir olmasını sağlarken iş yükü dağılımında da denge kurmuştur.
+
+- **Backlog düzeni ve Story seçimleri**: Backlog; oyunun tüm geliştirme sürecine dair görevleri kapsamaktadır ve sprint planlamasına uygun şekilde yapılandırılmıştır. Miro panosu üzerindeki kartlar, görev türlerine göre renk kodlarıyla ayrılmıştır turuncu item'lar _tasarım_, mavi item'lar _kodlama/geliştirme_, sarı item'lar _görsel efekt_, mor item'lar _ses_ gösterirken, yeşil item'lar ise _türü olmayan_ görevleri temsil etmektedir. Sprint 1’de yer alan görevler bu renk sistemine uygun biçimde seçilmiş; oyunun temel yapısını kuracak şekilde planlanmıştır.
+
+- **Daily Scrum**: Sprint süresince ekip üyeleri, günlük ilerlemelerini yazılı olarak **WhatsApp** üzerinden paylaşmıştır. Bu günlük bildirimler, sürecin şeffaf şekilde takip edilmesini sağlamış ve ekip içi görünürlüğü artırmıştır. Teknik kararlar, hızlı yönlendirme ve eş zamanlı bilgi aktarımı gereken durumlarda ise **Slack** üzerinden sesli görüşmeler gerçekleştirilmiştir. Bu iletişim dengesi, sprint boyunca hem yazılı kayıt oluşturulmasını hem de anlık koordinasyonun sağlıklı yürütülmesini mümkün kılmıştır. Ayrıca, sprint boyunca **her üç günde** bir planlı ekip toplantısı yapılacak şekilde yapılandırılmıştır. Bu toplantılar, biriken sorunların paylaşılması, ekip uyumunun korunması ve görev geçişlerinin daha net biçimde yönetilmesi açısından oldukça verimli geçmiştir.
+
+Günlük yazışmalar, toplantılar, Slack üzerinden konuştuğumuz toplantı günleri ve kaç saat sürdüğü arşivlenmek üzere Imgur üzerinde belgelenmektedir. [Sprint 1 – Daily Scrum Documentation](https://imgur.com/a/jTTq7LP)
+
+- **Sprint 1 Board**: ![Screenshot_27](https://github.com/user-attachments/assets/394cd225-702a-4684-be35-4cf7afc89bb1)
+![Screenshot_29](https://github.com/user-attachments/assets/02f17ba3-44d7-4dfe-8073-d583e9de7b49)
