@@ -1,13 +1,7 @@
-using DG.Tweening;
 using System.Collections;
-using System.Threading;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.XR;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class MonsterMovement : MonoBehaviour
 {
@@ -18,6 +12,8 @@ public class MonsterMovement : MonoBehaviour
     public NavMeshAgent agent;
 
     public AudioSource AudioSource;
+    public AudioClip clip1;
+    public AudioClip clip2;
     public RectTransform scareImage;
     public bool jumpScare;
     public float distance = 2;
@@ -30,6 +26,7 @@ public class MonsterMovement : MonoBehaviour
     public GameObject monsterJumpScare;
     public GameObject monster;
     public RandomScareManager randomScareManager;
+    public GameObject bgMusic;
 
     [Header("Patrol")]
     [SerializeField] private Transform[] points;
@@ -165,8 +162,11 @@ public class MonsterMovement : MonoBehaviour
         if (!jumpScare) return;
         //if (scareImage == null) return;
 
-        AudioSource.Play();
-        if(!scareActive)
+        //AudioSource.Play();
+        bgMusic?.SetActive(false);
+        AudioSource?.PlayOneShot(clip1);
+        AudioSource?.PlayOneShot(clip2);
+        if (!scareActive)
             StartCoroutine(JumpScareTimer());
         
         //scareImage.DOScale(Vector3.one * 2f, 0.5f).OnComplete(() =>
@@ -183,10 +183,10 @@ public class MonsterMovement : MonoBehaviour
     IEnumerator JumpScareTimer()
     {
         scareActive = true;
-        monster.SetActive(false);
-        monsterJumpScare.SetActive(true);
+        monster?.SetActive(false);
+        monsterJumpScare?.SetActive(true);
         player.gameObject.GetComponent<PlayerController>().canMove = false;
-        randomScareManager.audioSource.Stop();
+        randomScareManager.audioSource.enabled = false;
 
         yield return new WaitForSeconds(4);
         //monsterJumpScare.SetActive(false);

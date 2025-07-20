@@ -30,7 +30,7 @@ public class RandomScareManager : MonoBehaviour
             if (chanceRoll == 0)
             {
                 audioSource.clip = scareClips[clipIndex];
-                audioSource.Play();
+                audioSource?.Play();
             }
         }
     }
