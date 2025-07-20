@@ -8,6 +8,7 @@ public class SoundsPrefs : MonoBehaviour
     public TMP_Text MissionText;
     private void Awake()
     {
+
         instance = this;
         #region PlayerPrefs Kayýtlarý
         if (!PlayerPrefs.HasKey("WakeUpSound"))
@@ -22,6 +23,22 @@ public class SoundsPrefs : MonoBehaviour
         {
             PlayerPrefs.SetInt("DoctorRoomSound", 0);
         }
+        else if (!PlayerPrefs.HasKey("Etkileþim"))
+        {
+            PlayerPrefs.SetInt("RadyoEtkileþim", 0);
+        }
+        else if (!PlayerPrefs.HasKey("YatakEtkileþim"))
+        {
+            PlayerPrefs.SetInt("YatakEtkileþim", 0);
+
+        }
+        else if (!PlayerPrefs.HasKey("Dream1WakeUp"))
+        {
+            PlayerPrefs.SetInt("Dream1WakeUp", 0);
+
+        }
+
+
         #endregion
     }
     private void Start()
@@ -42,6 +59,10 @@ public class SoundsPrefs : MonoBehaviour
         if (PlayerPrefs.GetInt("DoctorRoomSound") == 1)
         {
             MissionText.text = "Odana Geri Dön Ve Radyoyu Dinle.";
+        }
+        if (PlayerPrefs.GetInt("YatakEtkileþim") == 1)
+        {
+            MissionText.text = "Yataða Yat";
         }
     }
 }

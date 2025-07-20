@@ -7,8 +7,6 @@ public class WakeUpSound : MonoBehaviour
     private bool hasPlayed = false;
     void Start()
     {
-        PlayerPrefs.SetInt("WakeUpSound", 0);
-
         audioSource = gameObject.AddComponent<AudioSource>();
         if (!hasPlayed && PlayerPrefs.GetInt("WakeUpSound") == 0)
         {

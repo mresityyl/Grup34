@@ -8,9 +8,6 @@ public class PlayCorridorSound : MonoBehaviour
     private bool hasPlayed = false;
     void Start()
     {
-
-        PlayerPrefs.SetInt("CorridorSound", 0);
-
         audioSource = gameObject.AddComponent<AudioSource>();
     }
 

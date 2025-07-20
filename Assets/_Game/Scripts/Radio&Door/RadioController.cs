@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class RadioController : MonoBehaviour
@@ -6,6 +7,9 @@ public class RadioController : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private LayerMask layerMask;
     private Vector2 screenCenter;
+    private bool wasPlaying = false;
+    public GameObject Bed, DoctorRoomSound;
+    public TMP_Text MissionText;
 
     [Header("Audio")]
     private AudioSource audioSource;
@@ -24,6 +28,8 @@ public class RadioController : MonoBehaviour
 
     private void Start()
     {
+        EtkileþimGüncelleme(); // yatak etkileþimi
+
         playerInput = PlayerInput.Instance;
         playerInput.OnInteractTriggered += OnClick;
 
@@ -33,6 +39,18 @@ public class RadioController : MonoBehaviour
         screenCenter = new Vector3 (Screen.width / 2, Screen.height / 2);
 
         stopButton?.SetPressed(true);
+    }
+
+    private void Update()
+    {
+        if (isPlaying && wasPlaying && !audioSource.isPlaying)
+        {
+            OnAudioFinished();
+            isPlaying = false;
+        }
+
+        // güncel durumunu kaydet
+        wasPlaying = audioSource.isPlaying;
     }
 
     private void OnDisable()
@@ -87,6 +105,7 @@ public class RadioController : MonoBehaviour
         stopButton?.SetPressed(false);
 
         audioSource.Play();
+        DoctorRoomSound.GetComponent<AudioSource>().Stop();
     }
 
     private void StopRadio()
@@ -114,6 +133,24 @@ public class RadioController : MonoBehaviour
         }
 
         PlayRadio();
+    }
+
+
+    private void OnAudioFinished()
+    {
+        PlayerPrefs.SetInt("YatakEtkileþim", 1);
+        PlayerPrefs.Save();
+        SoundsPrefs.instance.Missions();
+        EtkileþimGüncelleme();
+    }
+
+    private void EtkileþimGüncelleme()
+    {
+        if (PlayerPrefs.GetInt("YatakEtkileþim") == 1)
+        {
+            Bed.tag = "Yatak";
+            Bed.layer = 10;
+        }
     }
 
 }

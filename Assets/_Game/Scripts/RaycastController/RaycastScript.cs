@@ -3,54 +3,55 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.SceneManagement;
 
 public class RaycastScript : MonoBehaviour
 {
     public static RaycastScript instance;
     public float rayDistance = 5f; // Ray'in ne kadar uzaða gideceði
-    public Transform[] spawnpoints;
-    CharacterController controller;
     public Canvas TimerCanvas;
     public LayerMask layerMask, interactableLayer;
+    public Canvas DreamCanvas;
 
     public TMP_Text interactableText;
+
+
+    // bulunacak nesneler
+    bool Emzik, Ayýcýk, Çýngýrak;
+
 
     private void Awake()
     {
         instance = this;
     }
 
-    private void Start()
-    {
-        controller = GetComponent<CharacterController>();
-    }
-
     void Update()
     {
-        interactableText.enabled = false;
+        if (interactableText != null)
+        {
+            interactableText.enabled = false;
+        }
+        else { return; }
 
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
-
         // Etkileþimli nesneler için raycast
         if (Physics.Raycast(ray, out hit, rayDistance, interactableLayer))
         {
-            interactableText.enabled = true;
+            if (interactableText != null)
+            {
+                interactableText.enabled = true;
+            }
+            else { return; }
 
             // E tuþuna basýldýysa etkileþimi çalýþtýr
             if (Input.GetKeyDown(KeyCode.E))
             {
+                Debug.Log("e");
                 switch (hit.collider.tag)
                 {
                     case "Yatak":
-                        if (spawnpoints.Length > 0)
-                        {
-                            StartCoroutine(TeleportTo(spawnpoints[0].position));
-                        }
-                        else
-                        {
-                            Debug.Log("Rüyaya Dalýyorsunuz.");
-                        }
+                        StartCoroutine(DreamLoad());                        
                         break;
 
                     default:
@@ -61,11 +62,10 @@ public class RaycastScript : MonoBehaviour
         }
     }
 
-    private IEnumerator TeleportTo(Vector3 targetPos) // artýk sahne deðiþeceði için burasý iptal edilecek.
+    IEnumerator DreamLoad()
     {
-        controller.enabled = false;      // CharacterController'ý devre dýþý býrak
-        transform.position = targetPos;  // Pozisyonu deðiþtir
-        yield return null;               // Bir frame bekle
-        controller.enabled = true;       // Tekrar aktif et
+        DreamCanvas.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2.49f);
+        SceneManager.LoadScene("DreamNo1");
     }
 }
