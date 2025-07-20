@@ -187,6 +187,7 @@ public class MonsterMovement : MonoBehaviour
         monsterJumpScare?.SetActive(true);
         player.gameObject.GetComponent<PlayerController>().canMove = false;
         randomScareManager.audioSource.enabled = false;
+        CameraShaker.Instance?.ShakeScreen();
 
         yield return new WaitForSeconds(4);
         //monsterJumpScare.SetActive(false);
