@@ -4,7 +4,7 @@ public class RandomScareManager : MonoBehaviour
 {
     [Header("Audio Settings")]
     [SerializeField] private AudioClip[] scareClips;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     [Header("Timing Settings")]
     private float scareTimer = 0f;

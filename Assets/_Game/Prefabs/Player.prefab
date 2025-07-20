@@ -789,15 +789,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayDistance: 5
-  spawnpoints:
-  - {fileID: 0}
   TimerCanvas: {fileID: 0}
   layerMask:
     serializedVersion: 2
     m_Bits: 55
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
+  DreamCanvas: {fileID: 0}
   interactableText: {fileID: 0}
 --- !u!1001 &5531120632016192859
 PrefabInstance:

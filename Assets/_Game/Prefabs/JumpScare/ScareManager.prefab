@@ -28,8 +28,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46,10 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scareClips:
-  - {fileID: 8300000, guid: 5016866b89c4ee349994d9628492d7e5, type: 3}
-  - {fileID: 8300000, guid: 89cf9bce7a09df845a8d7bf3e4250999, type: 3}
-  - {fileID: 8300000, guid: 488ef0c92f58d194a9323008a34b3f67, type: 3}
-  playScareFrequency: 10
+  - {fileID: 8300000, guid: 620f62e1410b45d4496f2aab37b59838, type: 3}
+  - {fileID: 8300000, guid: 8015bd5a1add60246b29a5bbf686fd53, type: 3}
+  audioSource: {fileID: 0}
+  playScareFrequency: 15
   scareChancePercent: 2
 --- !u!82 &7267773882327686473
 AudioSource:
@@ -61,10 +61,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5016866b89c4ee349994d9628492d7e5, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 5016866b89c4ee349994d9628492d7e5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

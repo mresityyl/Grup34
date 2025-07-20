@@ -26,8 +26,11 @@ public class MonsterMovement : MonoBehaviour
     public bool isChasing;
     private bool isWaiting;
 
+    [Header("1")]
     public GameObject monsterJumpScare;
     public GameObject monster;
+    public RandomScareManager randomScareManager;
+
     [Header("Patrol")]
     [SerializeField] private Transform[] points;
     private int destPoint = 0;
@@ -183,7 +186,9 @@ public class MonsterMovement : MonoBehaviour
         monster.SetActive(false);
         monsterJumpScare.SetActive(true);
         player.gameObject.GetComponent<PlayerController>().canMove = false;
-        yield return new WaitForSeconds(3);
+        randomScareManager.audioSource.Stop();
+
+        yield return new WaitForSeconds(4);
         //monsterJumpScare.SetActive(false);
         //monster.SetActive(true);
         //scareActive = false;

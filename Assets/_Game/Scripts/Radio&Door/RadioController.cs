@@ -55,6 +55,8 @@ public class RadioController : MonoBehaviour
 
     private void OnDisable()
     {
+        if (playerInput == null) return;
+
         playerInput.OnInteractTriggered -= OnClick;
     }
 

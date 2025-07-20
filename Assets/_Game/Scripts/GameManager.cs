@@ -16,7 +16,8 @@ public class GameManager : MonoBehaviour
 
         if (PlayerPrefs.GetInt("Dream1WakeUp") == 1)
         {
-            Dream1WakeUpSound.Play();
+
+            Dream1WakeUpSound?.Play();
         }
         else
         {

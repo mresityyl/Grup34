@@ -18,6 +18,8 @@ public class FlashlightController : MonoBehaviour
 
     private void OnDisable()
     {
+        if (playerInput == null) return;
+
         playerInput.OnFlashlightToggle -= ToggleFlashlight;
         playerInput.OnFlashlightTapFeedback -= PlaySecondaryFlashlightSound;
     }

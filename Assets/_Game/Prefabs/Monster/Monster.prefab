@@ -63,6 +63,7 @@ MonoBehaviour:
   isChasing: 0
   monsterJumpScare: {fileID: 0}
   monster: {fileID: 1128503200645453842}
+  randomScareManager: {fileID: 0}
   points:
   - {fileID: 0}
   - {fileID: 0}
