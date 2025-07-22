@@ -29,7 +29,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Ay\u0131c\u0131kAnim"
+  m_Name: BearAnim
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -56,7 +56,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EmzikAnim
+  m_Name: PacifierAnim
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -127,7 +127,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\xC7\u0131ng\u0131rakAnim"
+  m_Name: HammerAnim
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
