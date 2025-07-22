@@ -9,9 +9,9 @@ public class PlayDoctorRoomSound : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetInt("RadyoEtkileþim") == 1)
+        if (PlayerPrefs.GetInt("RadyoEtkileï¿½im") == 1)
         {
-            // radyo butonu ile etkileþimi açýyoruz.
+            // radyo butonu ile etkileï¿½imi aï¿½ï¿½yoruz.
             PlayButton.GetComponent<Collider>().enabled = true;
             MetallicController mc = PlayButton.GetComponent<MetallicController>();
             mc.StartMetallicEffect(2f);
@@ -32,18 +32,18 @@ public class PlayDoctorRoomSound : MonoBehaviour
             hasPlayed = true;
             PlayerPrefs.SetInt("DoctorRoomSound", 1);
             SoundsPrefs.instance.Missions();
-            PlayerPrefs.SetInt("RadyoEtkileþim", 1);
+            PlayerPrefs.SetInt("RadyoEtkileï¿½im", 1);
             PlayerPrefs.Save();
-            etkileþimGüncelleme();
+            etkilesimUpdate();
         }
     }
 
 
-    void etkileþimGüncelleme()
+    void etkilesimUpdate()
     {
-        if (PlayerPrefs.GetInt("RadyoEtkileþim") == 1)
+        if (PlayerPrefs.GetInt("RadyoEtkileï¿½im") == 1)
         {
-            // radyo butonu ile etkileþimi açýyoruz.
+            // radyo butonu ile etkileï¿½imi aï¿½ï¿½yoruz.
             PlayButton.GetComponent<Collider>().enabled = true;
             MetallicController mc = PlayButton.GetComponent<MetallicController>();
             mc.StartMetallicEffect(2f);

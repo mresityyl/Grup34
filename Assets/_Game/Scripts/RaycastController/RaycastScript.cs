@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class RaycastScript : MonoBehaviour
 {
     public static RaycastScript instance;
-    public float rayDistance = 5f; // Ray'in ne kadar uzaða gideceði
+    public float rayDistance = 5f; // Ray'in ne kadar uzaï¿½a gideceï¿½i
     public Canvas TimerCanvas;
     public LayerMask layerMask, interactableLayer;
     public Canvas DreamCanvas;
@@ -17,7 +17,7 @@ public class RaycastScript : MonoBehaviour
 
 
     // bulunacak nesneler
-    bool Emzik, Ayýcýk, Çýngýrak;
+    bool Emzik, Ayicik, Cingirak;
 
 
     private void Awake()
@@ -35,7 +35,7 @@ public class RaycastScript : MonoBehaviour
 
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
-        // Etkileþimli nesneler için raycast
+        // Etkileï¿½imli nesneler iï¿½in raycast
         if (Physics.Raycast(ray, out hit, rayDistance, interactableLayer))
         {
             if (interactableText != null)
@@ -44,7 +44,7 @@ public class RaycastScript : MonoBehaviour
             }
             else { return; }
 
-            // E tuþuna basýldýysa etkileþimi çalýþtýr
+            // E tuï¿½una basï¿½ldï¿½ysa etkileï¿½imi ï¿½alï¿½ï¿½tï¿½r
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("e");
@@ -55,7 +55,7 @@ public class RaycastScript : MonoBehaviour
                         break;
 
                     default:
-                        Debug.Log("Hiçbir iþlem yapýlmadý.");
+                        Debug.Log("Hiï¿½bir iï¿½lem yapï¿½lmadï¿½.");
                         break;
                 }
             }

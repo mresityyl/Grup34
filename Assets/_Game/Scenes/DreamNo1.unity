@@ -7920,7 +7920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_TagString
-      value: "\xC7\u0131ng\u0131rak"
+      value: Cingirak
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 0bc9ac9deecfa9c40b15ab6de15e06c5, type: 3}
       propertyPath: m_Layer
@@ -8779,7 +8779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5609321221556402741, guid: 73cfba07602f54796a6aa3ddf449afc3, type: 3}
       propertyPath: m_TagString
-      value: "Ay\u0131c\u0131k"
+      value: Ayicik
       objectReference: {fileID: 0}
     - target: {fileID: -4612222582832722506, guid: 73cfba07602f54796a6aa3ddf449afc3, type: 3}
       propertyPath: m_Layer

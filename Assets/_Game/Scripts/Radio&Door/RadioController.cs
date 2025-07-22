@@ -18,17 +18,17 @@ public class RadioController : MonoBehaviour
     private PlayerInput playerInput;
     private Camera mainCamera;
 
-    // Buton referanslarý
+    // Buton referanslarï¿½
     [SerializeField] private RadioButton playButton;
     [SerializeField] private RadioButton stopButton;
 
-    // Durum kontrolü
+    // Durum kontrolï¿½
     private bool isPlaying = false;
 
 
     private void Start()
     {
-        EtkileþimGüncelleme(); // yatak etkileþimi
+        EtkilesimUpdate(); // yatak etkileï¿½imi
 
         playerInput = PlayerInput.Instance;
         playerInput.OnInteractTriggered += OnClick;
@@ -49,7 +49,7 @@ public class RadioController : MonoBehaviour
             isPlaying = false;
         }
 
-        // güncel durumunu kaydet
+        // gï¿½ncel durumunu kaydet
         wasPlaying = audioSource.isPlaying;
     }
 
@@ -123,12 +123,12 @@ public class RadioController : MonoBehaviour
     }
 
 
-    // Dýþarýdan ses deðiþtirmek için
+    // Dï¿½ï¿½arï¿½dan ses deï¿½iï¿½tirmek iï¿½in
     public void SetAudioClip(AudioClip clip)
     {
         audioSource.clip = clip;
 
-        // Yeni ses geldiðinde eðer oynuyorsa durdur
+        // Yeni ses geldiï¿½inde eï¿½er oynuyorsa durdur
         if (isPlaying)
         {
             StopRadio();
@@ -140,15 +140,15 @@ public class RadioController : MonoBehaviour
 
     private void OnAudioFinished()
     {
-        PlayerPrefs.SetInt("YatakEtkileþim", 1);
+        PlayerPrefs.SetInt("YatakEtkileï¿½im", 1);
         PlayerPrefs.Save();
         SoundsPrefs.instance.Missions();
-        EtkileþimGüncelleme();
+        EtkilesimUpdate();
     }
 
-    private void EtkileþimGüncelleme()
+    private void EtkilesimUpdate()
     {
-        if (PlayerPrefs.GetInt("YatakEtkileþim") == 1)
+        if (PlayerPrefs.GetInt("YatakEtkileï¿½im") == 1)
         {
             Bed.tag = "Yatak";
             Bed.layer = 10;
