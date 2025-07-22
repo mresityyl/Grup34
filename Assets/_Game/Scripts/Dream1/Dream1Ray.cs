@@ -34,7 +34,7 @@ public class Dream1Ray : MonoBehaviour
                         Animator PacifierAnimator = hit.collider.gameObject.GetComponent<Animator>();
                         PlayerPrefs.SetInt("Collected", PlayerPrefs.GetInt("Collected") + 1);
                         PacifierAnimator.Play("PacifierAnim");
-                        BölümKontrol();
+                        BolumKontrol();
                         break;
 
                     case "Bear":
@@ -43,7 +43,7 @@ public class Dream1Ray : MonoBehaviour
                         Animator BearAnimator = hit.collider.gameObject.GetComponent<Animator>();
                         PlayerPrefs.SetInt("Collected", PlayerPrefs.GetInt("Collected") + 1);
                         BearAnimator.Play("BearAnim");
-                        BölümKontrol();
+                        BolumKontrol();
                         break;
 
                     case "Hammer":
@@ -52,7 +52,7 @@ public class Dream1Ray : MonoBehaviour
                         Animator HammerAnimator = hit.collider.gameObject.GetComponent<Animator>();
                         PlayerPrefs.SetInt("Collected", PlayerPrefs.GetInt("Collected") + 1);
                         HammerAnimator.Play("HammerAnim");
-                        BölümKontrol();
+                        BolumKontrol();
                         break;
 
                     default:
@@ -64,14 +64,14 @@ public class Dream1Ray : MonoBehaviour
     }
 
 
-    private void BölümKontrol()
+    private void BolumKontrol()
     {
         CollectedText.text = PlayerPrefs.GetInt("Collected").ToString()+"/3";
         if (Pacifier == true && Bear == true && Hammer == true)
         {
             PlayerPrefs.SetInt("Dream1WakeUp", 1);
             SceneManager.LoadScene("HospitalRoomMap");
-            Debug.Log("Bölüm Kazanildi.");
+            Debug.Log("Bolum Kazanildi.");
         }
         else { return; }
     }
