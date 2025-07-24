@@ -299,14 +299,6 @@ PrefabInstance:
       value: Monster
       objectReference: {fileID: 0}
     - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
-      propertyPath: clip1
-      value: 
-      objectReference: {fileID: 8300000, guid: 139f8dfa676e4074ab658e7cbf9f309c, type: 3}
-    - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
-      propertyPath: clip2
-      value: 
-      objectReference: {fileID: 8300000, guid: 06206282d50b9cf44ba900f42ea1b307, type: 3}
-    - target: {fileID: 2862993835750576904, guid: db106573558c37b4089bcdb626350c92, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 71898295}
@@ -354,14 +346,6 @@ PrefabInstance:
       propertyPath: 'points.Array.data[7]'
       value: 
       objectReference: {fileID: 1581425183}
-    - target: {fileID: 5661964565455327119, guid: db106573558c37b4089bcdb626350c92, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5661964565455327119, guid: db106573558c37b4089bcdb626350c92, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5946563284417836417, guid: db106573558c37b4089bcdb626350c92, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.6
@@ -3320,7 +3304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.68
+      value: -9.514
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3328,7 +3312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4
+      value: 0.748
       objectReference: {fileID: 0}
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3357,14 +3341,6 @@ PrefabInstance:
     - target: {fileID: 4780031052446082155, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6007103348225754105, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
-      propertyPath: duration
-      value: 0.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 6007103348225754105, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
-      propertyPath: magnitude
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6458774027923765309, guid: 83dc71178c2bccb4eb8d57e33be1e2b2, type: 3}
       propertyPath: m_Name
@@ -3652,7 +3628,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0910a0db62e73da4cb7320c1a7968d04, type: 3}
   m_Resource: {fileID: 8300000, guid: 0910a0db62e73da4cb7320c1a7968d04, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11004,6 +10980,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6197389903544160921, guid: 4f378fe0ce3a73e45a705d95ba87dc71, type: 3}
+      propertyPath: volume
+      value: 
+      objectReference: {fileID: 1419545223}
     - target: {fileID: 6197389903544160921, guid: 4f378fe0ce3a73e45a705d95ba87dc71, type: 3}
       propertyPath: 'scareClips.Array.data[2]'
       value: 
