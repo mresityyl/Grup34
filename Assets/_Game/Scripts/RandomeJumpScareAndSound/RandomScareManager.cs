@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class RandomScareManager : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class RandomScareManager : MonoBehaviour
     private float scareTimer = 0f;
     [SerializeField] private float playScareFrequency = 15f;
     [Range(1, 5)][SerializeField] private int scareChancePercent = 2;
+
+    [Header("Other")]
+    public Volume volume;
+
 
     private void Awake()
     {

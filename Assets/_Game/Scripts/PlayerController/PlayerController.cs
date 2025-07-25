@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     private CharacterController characterController;
 
     public bool canMove = true;
+    public float magnitude = 1f;
+    public float magnitudeCamera = 1f;
 
     private void Awake()
     {
@@ -31,7 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!canMove) return;
 
-        playerMovement.PlayerMove(characterController, playerCamera, playerInput.MoveInput, playerInput.SprintToggledOn);
+        playerMovement.PlayerMove(characterController, playerCamera, playerInput.MoveInput * magnitude, playerInput.SprintToggledOn);
 
         playerAudioController.SetValues(playerInput.MoveInput, playerInput.SprintToggledOn, playerInput.CrouchToggledOn);
 
@@ -40,6 +42,6 @@ public class PlayerController : MonoBehaviour
 
     private void LateUpdate()
     {
-        playerMovement.PlayerSetCamera(playerCamera.transform, playerInput.LookInput);
+        playerMovement.PlayerSetCamera(playerCamera.transform, playerInput.LookInput * magnitudeCamera);
     }
 }
