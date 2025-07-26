@@ -66,6 +66,18 @@ public class RaycastScript : MonoBehaviour
     {
         DreamCanvas.gameObject.SetActive(true);
         yield return new WaitForSeconds(2.49f);
-        SceneManager.LoadScene("DreamNo1");
+        
+        if (PlayerPrefs.GetInt("Dream1WakeUp") == 0)
+        {
+            SceneManager.LoadScene("DreamNo1");
+        }
+        else if (PlayerPrefs.GetInt("Dream2WakeUp") == 0)
+        {
+            SceneManager.LoadScene("Dream2_New");
+        }
+        else if (PlayerPrefs.GetInt("Dream3WakeUp") == 0)
+        {
+            SceneManager.LoadScene("DreamNo3");
+        }
     }
 }
