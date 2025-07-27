@@ -58,18 +58,22 @@ public class MonsterMovement : MonoBehaviour
     IEnumerator WaitatPoint()
     {
         isWaiting = true;
-        controller.SetBool("isWaiting", isWaiting);
+        //controller.SetBool("isWaiting", isWaiting);
         yield return new WaitForSeconds(waitTime);
 
         agent.destination = points[destPoint].position;
         destPoint = (destPoint + 1) % points.Length;
         isWaiting = false;
-        controller.SetBool("isWaiting", isWaiting);
+        //controller.SetBool("isWaiting", isWaiting);
     }
 
     void Update()
     {
-        if (agent.remainingDistance < 0.5f && !isChasing)
+        float speed = agent.velocity.magnitude;
+        controller.SetBool("isWaiting", speed < 0.08f);
+
+
+        if (!agent.pathPending && agent.remainingDistance < 0.5f && !isChasing)
             GotoNextPoint();
 
         if (Input.GetMouseButton(1))
