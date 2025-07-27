@@ -5,14 +5,21 @@ using UnityEngine.Rendering.Universal;
 
 public class ScareTrigger : MonoBehaviour
 {
+    [Header("Ses")]
     public AudioSource audioSource;
-    private bool isPlayed;
+    public AudioClip scareClip, breathClip;
+
+    [Header("Volume ve Efektler")]
     public Volume volume;
     private ColorAdjustments colorAdjustments;
     private LensDistortion lensDistortion;
     private DepthOfField depthOfField;
 
-    public float effectTime = 2f;
+    [Header("Efekt Ayarlarý")]
+    public float effectTime = 1f;
+    public int loopCount = 4;
+
+    private bool isPlayed;
 
     private void Start()
     {
@@ -23,45 +30,47 @@ public class ScareTrigger : MonoBehaviour
     {
         if (isPlayed) return;
 
-        if (!other.TryGetComponent<CharacterController>(out CharacterController characterController)) return;
+        if (!other.TryGetComponent<CharacterController>(out CharacterController _)) return;
 
-        audioSource.Play();
+        audioSource.volume = 0.9f;
+        audioSource.PlayOneShot(scareClip);
 
         Player.Instance.controller.magnitude = -1f;
         Player.Instance.controller.magnitudeCamera = -1f;
+
         if (volume.profile.TryGet(out colorAdjustments))
         {
-            //colorAdjustments.saturation.value = -100f;
             DOTween.To(
-                    () => colorAdjustments.saturation.value,
-                    x => colorAdjustments.saturation.value = x,
-                    -100f,
-                    effectTime
-                );
+                () => colorAdjustments.saturation.value,
+                x => colorAdjustments.saturation.value = x,
+                -100f,
+                effectTime
+            );
         }
+
         if (volume.profile.TryGet(out lensDistortion))
         {
-            //lensDistortion.intensity.value = -0.3f;
             DOTween.To(
-                  () => lensDistortion.intensity.value,
-                  x => lensDistortion.intensity.value = x,
-                  -0.3f,
-                  effectTime
-               );
+                () => lensDistortion.intensity.value,
+                x => lensDistortion.intensity.value = x,
+                -0.3f,
+                effectTime
+            );
 
-             DOTween.To(
+            DOTween.To(
                 () => lensDistortion.intensity.value,
                 x => lensDistortion.intensity.value = x,
                 -0.6f,
                 effectTime
-            ).SetLoops(4, LoopType.Yoyo)
+            )
+            .SetLoops(loopCount, LoopType.Yoyo)
             .OnComplete(() =>
             {
                 DOTween.To(
-                   () => lensDistortion.intensity.value,
-                   x => lensDistortion.intensity.value = x,
-                   0f,
-                   effectTime
+                    () => lensDistortion.intensity.value,
+                    x => lensDistortion.intensity.value = x,
+                    0f,
+                    effectTime
                 );
 
                 DOTween.To(
@@ -71,43 +80,44 @@ public class ScareTrigger : MonoBehaviour
                     effectTime
                 );
             });
-
         }
-
 
         if (volume.profile.TryGet(out depthOfField))
         {
             depthOfField.active = true;
 
-            //lensDistortion.intensity.value = -0.3f;
             DOTween.To(
-                  () => depthOfField.focusDistance.value,
-                  x => depthOfField.focusDistance.value = x,
-                  0.1f,
-                  effectTime
-               );
-
-             DOTween.To(
-                  () => depthOfField.focusDistance.value,
-                  x => depthOfField.focusDistance.value = x,
-                .8f,
+                () => depthOfField.focusDistance.value,
+                x => depthOfField.focusDistance.value = x,
+                0.1f,
                 effectTime
-            ).SetLoops(4, LoopType.Yoyo)
+            );
+
+            DOTween.To(
+                () => depthOfField.focusDistance.value,
+                x => depthOfField.focusDistance.value = x,
+                0.8f,
+                effectTime
+            )
+            .SetLoops(loopCount, LoopType.Yoyo)
             .OnComplete(() =>
             {
                 DOTween.To(
-                  () => depthOfField.focusDistance.value,
-                  x => depthOfField.focusDistance.value = x,
-                   10f,
-                   effectTime
+                    () => depthOfField.focusDistance.value,
+                    x => depthOfField.focusDistance.value = x,
+                    10f,
+                    effectTime
                 );
                 depthOfField.active = false;
+
                 Player.Instance.controller.magnitude = 1f;
                 Player.Instance.controller.magnitudeCamera = 1f;
-
             });
 
+            audioSource.volume = 0.3f;
+            audioSource.PlayOneShot(breathClip);
         }
+
         isPlayed = true;
     }
 }

@@ -8,7 +8,8 @@ public class MonsterMovement : MonoBehaviour
     public Transform player;
     public float detectionDistance = 5f;
     public float viewAngle = 60f;
-    
+
+    public float walkSpeed = 1, chaseSpeed = 3;
     public NavMeshAgent agent;
 
     public AudioSource AudioSource;
@@ -105,20 +106,20 @@ public class MonsterMovement : MonoBehaviour
                     Debug.Log("Oyuncu tespit edildi! Saldýrýlýyor!");
                     isChasing = true;
                     agent.SetDestination(player.transform.position);
-                    agent.speed = 3;
+                    agent.speed = chaseSpeed;
                 }
 
             }
             else
             {
                 isChasing = false;
-                agent.speed = 1;
+                agent.speed = walkSpeed;
             }
         }
         else
         {
             isChasing = false;
-                    agent.speed = 1;
+                    agent.speed = walkSpeed;
 
         }
 
