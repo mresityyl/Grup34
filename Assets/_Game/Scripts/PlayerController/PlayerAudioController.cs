@@ -13,6 +13,7 @@ public class PlayerAudioController : MonoBehaviour
     [Header("Audio Sources")]
     [SerializeField] private AudioSource movementAudioSource;
     [SerializeField] private AudioSource heartbeatAudioSource;
+    [SerializeField] private AudioSource breathAudioSource;
 
     //[Header("Audio Mixer Groups")]
     //[SerializeField] private AudioMixerGroup walkGroup;
@@ -24,6 +25,7 @@ public class PlayerAudioController : MonoBehaviour
 
     [Header("Other")]
     private float sprintTimer;
+    private bool breathAfterRun;
 
     void Update()
     {
@@ -47,6 +49,10 @@ public class PlayerAudioController : MonoBehaviour
             {
                 TryPlaySound(movementAudioSource, movementAudioClips[0], false, .45f); //Walk
                 StopSound(heartbeatAudioSource, true);
+
+                if (sprintTimer > 15)
+                    breathAfterRun = true;
+
                 sprintTimer = 0f;
             }
         }
@@ -54,6 +60,13 @@ public class PlayerAudioController : MonoBehaviour
         {
             StopSound(movementAudioSource, false);
             StopSound(heartbeatAudioSource, true);
+
+            if (breathAfterRun)
+            {
+                breathAudioSource.Play();
+                breathAfterRun = false;
+            }
+
             sprintTimer = 0f;
         }
     }
