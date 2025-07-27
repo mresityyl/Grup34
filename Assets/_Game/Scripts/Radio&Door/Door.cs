@@ -16,6 +16,11 @@ public class Door : MonoBehaviour, IClickable
     [Header("NavMesh")]
     [SerializeField] private NavMeshObstacle navMeshObstacle;
 
+    [Header("Locked Shake Settings")]
+    [SerializeField] private float lockedShakeAngle = 5f;
+    [SerializeField] private float lockedShakeDuration = 0.1f;
+    private float lockedBaseAngleY;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -23,13 +28,18 @@ public class Door : MonoBehaviour, IClickable
         SetNavMeshObstacle();
 
         isOpen = transform.rotation.eulerAngles.y == openAngle;
-
+        lockedBaseAngleY = transform.localEulerAngles.y;
     }
     public RadioButtonType OnClicked()
     {
         if (isLocked)
         {
             Debug.Log("Dorr is locked");
+
+            PlayLockedAnimation();
+            audioSource.clip = audioClips[2];
+            audioSource.Play();
+
             return RadioButtonType.isNull;
         }
 
@@ -65,5 +75,28 @@ public class Door : MonoBehaviour, IClickable
     {
         navMeshObstacle.carving = !isOpen;
         //navMeshObstacle.enabled = isOpen;
+    }
+
+    private void PlayLockedAnimation()
+    {
+        Sequence seq = DOTween.Sequence();
+
+        seq.Append(transform.DOLocalRotate(
+            new Vector3(0f, lockedBaseAngleY + lockedShakeAngle, 0f),
+            lockedShakeDuration,
+            RotateMode.FastBeyond360
+        ));
+
+        seq.Append(transform.DOLocalRotate(
+            new Vector3(0f, lockedBaseAngleY - lockedShakeAngle, 0f),
+            lockedShakeDuration,
+            RotateMode.FastBeyond360
+        ));
+
+        seq.Append(transform.DOLocalRotate(
+            new Vector3(0f, lockedBaseAngleY, 0f),
+            lockedShakeDuration,
+            RotateMode.FastBeyond360
+        ));
     }
 }

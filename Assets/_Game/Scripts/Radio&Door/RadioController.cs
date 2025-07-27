@@ -36,13 +36,15 @@ public class RadioController : MonoBehaviour
         mainCamera = Camera.main;
         audioSource = GetComponent<AudioSource>();
 
-        screenCenter = new Vector3 (Screen.width / 2, Screen.height / 2);
+        //screenCenter = new Vector3 (Screen.width / 2, Screen.height / 2);
 
         stopButton?.SetPressed(true);
     }
 
     private void Update()
     {
+        if (audioSource == null) return;
+
         if (isPlaying && wasPlaying && !audioSource.isPlaying)
         {
             OnAudioFinished();
@@ -107,7 +109,7 @@ public class RadioController : MonoBehaviour
         stopButton?.SetPressed(false);
 
         audioSource.Play();
-        DoctorRoomSound.GetComponent<AudioSource>().Stop();
+        DoctorRoomSound?.GetComponent<AudioSource>().Stop();
     }
 
     private void StopRadio()
@@ -148,6 +150,8 @@ public class RadioController : MonoBehaviour
 
     private void EtkilesimUpdate()
     {
+        if (Bed == null) return;
+
         if (PlayerPrefs.GetInt("YatakEtkile�im") == 1)
         {
             Bed.tag = "Yatak";

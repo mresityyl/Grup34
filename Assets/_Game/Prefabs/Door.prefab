@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 65
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6594070316604324372
 Transform:
@@ -143,6 +143,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 488ef0c92f58d194a9323008a34b3f67, type: 3}
   - {fileID: 8300000, guid: 89cf9bce7a09df845a8d7bf3e4250999, type: 3}
   navMeshObstacle: {fileID: 0}
+  lockedShakeAngle: 5
+  lockedShakeDuration: 0.1
 --- !u!65 &4035156265100878453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -293,7 +295,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 65
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4627836058203567809
 Transform:
