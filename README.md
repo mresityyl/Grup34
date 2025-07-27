@@ -226,3 +226,6 @@ https://github.com/user-attachments/assets/c9133101-76fa-4dfa-9e10-c0e38e740697
   - Sprintin ikinci haftasında artan iş yükü nedeniyle ekip, neredeyse her gün düzenli olarak toplandı. Bu sayede kararlar daha hızlı alındı ve tüm güncellemeler eş zamanlı takip edildi.
   - Teknik tarafta, Main branch üzerinde yaşanan senkronizasyon sorunları ekip üyelerinin hızlı müdahalesiyle çözüldü. Versiyon kontrolü sırasında oluşan hatalar, ortak iletişimle kısa sürede giderildi.
   - Ekip içindeki bu düzenli ve hızlı iletişim sayesinde sprint sonunda tüm görevler başarıyla tamamlandı. Gelecek sprintlerde, bu iletişim düzeninin korunarak ilerlenmesine karar verildi.
+
+## License
+This project is proprietary. All rights reserved. See [LICENSE](LICENSE) for details.
