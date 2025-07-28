@@ -132,6 +132,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlayerSetCamera(Transform camera, Vector2 input)
     {
+        if (Time.timeScale == 0f) return;
+
         // Yatay dönüþ (karakter gövdesi dönüyor)
         lookAtHorizontal += input.x * sensitivity;
         float smoothYaw = Mathf.SmoothDampAngle(transform.eulerAngles.y, lookAtHorizontal, ref yawVelocity, 0.05f);

@@ -29,7 +29,7 @@ public class MetallicController : MonoBehaviour
             t += Time.deltaTime / duration;
             float metallicValue = forward ? Mathf.Lerp(0f, 1f, t) : Mathf.Lerp(1f, 0f, t);
 
-            mat.SetFloat("_Metallic", metallicValue);
+            mat?.SetFloat("_Metallic", metallicValue);
 
             if (t >= 1f)
             {
